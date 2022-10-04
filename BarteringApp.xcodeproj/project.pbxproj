@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A88224D28DE683C00995674 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88224C28DE683C00995674 /* LoginPage.swift */; };
+		9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */; };
+		9A9C4B1428E52D8800C05EB5 /* VerifyBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */; };
+		9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEACCB928D037FA00783F28 /* CompanyPage.swift */; };
+		9AEACCBC28D038BD00783F28 /* BarterInitiated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */; };
 		FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */; };
 		FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948F28CA9B7800F64DF1 /* ContentView.swift */; };
 		FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A949128CA9B7900F64DF1 /* Assets.xcassets */; };
-		FB2A949528CA9B7900F64DF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A949428CA9B7900F64DF1 /* Preview Assets.xcassets */; };
 		FB2A949F28CA9B7900F64DF1 /* BarteringAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */; };
 		FB2A94A928CA9B7900F64DF1 /* BarteringAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */; };
 		FB2A94AB28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94AA28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift */; };
@@ -34,11 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A88224C28DE683C00995674 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyBusiness.swift; sourceTree = "<group>"; };
+		9AEACCB928D037FA00783F28 /* CompanyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPage.swift; sourceTree = "<group>"; };
+		9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarterInitiated.swift; sourceTree = "<group>"; };
 		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppApp.swift; sourceTree = "<group>"; };
 		FB2A948F28CA9B7800F64DF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB2A949128CA9B7900F64DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FB2A949428CA9B7900F64DF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB2A949A28CA9B7900F64DF1 /* BarteringAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarteringAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppTests.swift; sourceTree = "<group>"; };
 		FB2A94A428CA9B7900F64DF1 /* BarteringAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarteringAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,11 @@
 				FB2A948F28CA9B7800F64DF1 /* ContentView.swift */,
 				FB2A949128CA9B7900F64DF1 /* Assets.xcassets */,
 				FB2A949328CA9B7900F64DF1 /* Preview Content */,
+				9AEACCB928D037FA00783F28 /* CompanyPage.swift */,
+				9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */,
+				9A88224C28DE683C00995674 /* LoginPage.swift */,
+				9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */,
+				9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */,
 			);
 			path = BarteringApp;
 			sourceTree = "<group>";
@@ -105,7 +118,6 @@
 		FB2A949328CA9B7900F64DF1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FB2A949428CA9B7900F64DF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -231,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2A949528CA9B7900F64DF1 /* Preview Assets.xcassets in Resources */,
 				FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9C4B1428E52D8800C05EB5 /* VerifyBusiness.swift in Sources */,
+				9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */,
 				FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */,
+				9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources */,
 				FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */,
+				9A88224D28DE683C00995674 /* LoginPage.swift in Sources */,
+				9AEACCBC28D038BD00783F28 /* BarterInitiated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
