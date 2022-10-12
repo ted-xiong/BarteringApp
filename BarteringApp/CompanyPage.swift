@@ -14,7 +14,6 @@ struct CompanyPage: View {
                 Rectangle()
                     .fill(Color("Turquoise"))
                 VStack (alignment: .leading) {
-                    Image(systemName: "chevron.backward").padding(.leading)
                     HStack {
                         
                         Image("DesignLogo")
@@ -122,9 +121,6 @@ struct CompanyPage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             CompanyPage()
-                .previewInterfaceOrientation(.portraitUpsideDown)
-            CompanyPage()
-                .previewInterfaceOrientation(.portraitUpsideDown)
         }
     }
 }
