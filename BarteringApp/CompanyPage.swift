@@ -12,7 +12,7 @@ struct CompanyPage: View {
         VStack {
             ZStack {
                 Rectangle()
-                    .fill(Color("Turquoise"))
+                    .fill(Color("custom cyan"))
                 VStack (alignment: .leading) {
                     HStack {
                         
@@ -28,13 +28,13 @@ struct CompanyPage: View {
                     .onTapGesture {
                         print("Show details for user")
                     }
-                    Text("Thompson Design Studio").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
+                    Text("Squeaky Cleanz").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
                 }
             }
             VStack  (alignment: .leading) {
                 HStack {
                     VStack {
-                        Text("Thompson Design Studio is an international brand and design agency. We create brands for the most innovative and exciting companies in the world.")
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
                             .font(.caption)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(2)

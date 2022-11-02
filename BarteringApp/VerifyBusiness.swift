@@ -12,6 +12,7 @@ struct VerifyBusiness: View {
     @State var emailAddress: String = ""
     @State var password: String = ""
     @State var passwordConfirm: String = ""
+    @State var showSheet: Bool = false
     var body: some View {
         VStack {
             Text("Verify your business").font(.largeTitle.bold())
@@ -76,18 +77,19 @@ struct VerifyBusiness: View {
                 }
                 Group{
                     Spacer(minLength: 20)
-                    HStack {
-                        Image(systemName: "square.fill.text.grid.1x2").foregroundColor(Color.gray)
-                        VStack {
-                            HStack {
-                    TextField("Services Provided", text: $passwordConfirm).textFieldStyle(DefaultTextFieldStyle())
-                            }
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
-                        }
-                    }
+                    Button(action: {
+                        showSheet.toggle()
+                    }, label: {
+                        Text("Services")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .background(Color.gray.cornerRadius(3))
+                            .padding(30)
+                            .frame(width: 350, height: 50, alignment: .leading)
+                    })
+                    .sheet(isPresented: $showSheet, content: {
+                        SecondScreen()
+                    })
                 }
                 Group{
                     Spacer(minLength: 20)
@@ -117,6 +119,49 @@ struct VerifyBusiness: View {
             .cornerRadius(20)
             
         }.padding(15)
+    }
+}
+
+struct SecondScreen: View{
+    
+    var body: some View{
+        Text("Type of Service")
+            .frame(width:200, height:100, alignment: .top)
+            .padding(10)
+        
+        VStack{
+            Button(action: {
+                
+            }, label: {
+                Text("Miscellaneous Services")
+            })
+            .padding(20)
+            Button(action: {
+                
+            }, label: {
+                Text("Physical Labor Services")
+            })
+            .padding(20)
+            Button(action: {
+                
+            }, label: {
+                Text("Food and Hospitality Services")
+            })
+            .padding(20)
+            Button(action: {
+                
+            }, label: {
+                Text("Programming Services")
+            })
+            .padding(20)
+            Button(action: {
+                
+            }, label: {
+                Text("Business Services")
+            })
+            .padding(20)
+        }
+        .frame(width:300, height:450, alignment: .top)
     }
 }
 
