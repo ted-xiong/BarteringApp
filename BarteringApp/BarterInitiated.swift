@@ -107,7 +107,7 @@ struct BarterInitiated: View {
                 HStack{
                     VStack{
                         Text("Offering").font(.system(size:11)).foregroundColor(Color("Turquoise"))
-                        Text("Cookies").font(.system(size:15))
+                        Text("Cafe Items").font(.system(size:15))
                     }
                     
                     Divider()
@@ -115,20 +115,20 @@ struct BarterInitiated: View {
                     VStack{
                         Text("For").font(.system(size:11)).foregroundColor(Color("Turquoise"))
             
-                        Text("Repair Services").font(.system(size:15))
+                        Text("Window Cleanings").font(.system(size:15))
                     }
                     
                     Divider()
                     
                     VStack{
                         Text("When").font(.system(size:11)).foregroundColor(Color("Turquoise"))
-                        Text("4:21 pm").font(.system(size:15))
+                        Text("4:30 pm").font(.system(size:15))
                     }
                 }.frame(width: 270, height: 60)
                                 
             }.frame(width: 320, height: 100)
             
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis fringilla turpis, vel gravida nulla fermentum a. Maecenas eget volutpat arcu. Ut auctor nulla ac auctor dictum. Morbi aliquet ac diam cursus bibendum. Morbi viverra massa a nulla fermentum elementum.").font(.system(size:11)).padding()
+            Text("We will follow up with both parties to make sure the deal has followed through! Thank you for using The Barter Shop.").font(.system(size:11)).padding()
             Spacer()
             ZStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color("Turquoise")).frame(width: 200, height: 40).position(x: 163, y: 30)
