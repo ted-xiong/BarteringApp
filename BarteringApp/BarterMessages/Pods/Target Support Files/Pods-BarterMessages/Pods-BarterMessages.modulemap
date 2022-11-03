@@ -1,6 +1,0 @@
-framework module Pods_BarterMessages {
-  umbrella header "Pods-BarterMessages-umbrella.h"
-
-  export *
-  module * { export * }
-}
