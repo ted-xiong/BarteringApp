@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct VerifyBusiness: View {
+    
     @State var username: String = ""
     @State var emailAddress: String = ""
     @State var password: String = ""
@@ -170,3 +171,4 @@ struct VerifyBusiness_Previews: PreviewProvider {
         VerifyBusiness()
     }
 }
+
