@@ -15,13 +15,14 @@
 		9AE50E1C28F9E8D3004DF1EE /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE50E1B28F9E8D3004DF1EE /* ChatPage.swift */; };
 		9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEACCB928D037FA00783F28 /* CompanyPage.swift */; };
 		9AEACCBC28D038BD00783F28 /* BarterInitiated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */; };
-    9ED972C728F719B100CDDE24 /* FoodServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C428F719B100CDDE24 /* FoodServices.swift */; };
+		9AFB30B528F799ED003FD182 /* DocumentUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB30B428F799ED003FD182 /* DocumentUpload.swift */; };
+		9ED972C728F719B100CDDE24 /* FoodServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C428F719B100CDDE24 /* FoodServices.swift */; };
 		9ED972C828F719B100CDDE24 /* BusinessServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C528F719B100CDDE24 /* BusinessServices.swift */; };
 		9ED972C928F719B100CDDE24 /* LaborServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C328F719B100CDDE24 /* LaborServices.swift */; };
 		9ED972CA28F719B100CDDE24 /* ProgrammingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */; };
 		9ED972CB28F719B100CDDE24 /* BarterSpecializedServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */; };
 		9ED972CC28F719B100CDDE24 /* MiscServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C628F719B100CDDE24 /* MiscServices.swift */; };
-		9AFB30B528F799ED003FD182 /* DocumentUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB30B428F799ED003FD182 /* DocumentUpload.swift */; };
+		BF591C8229148D1C004FF9FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8129148D1C004FF9FC /* Settings.swift */; };
 		FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */; };
 		FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948F28CA9B7800F64DF1 /* ContentView.swift */; };
 		FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A949128CA9B7900F64DF1 /* Assets.xcassets */; };
@@ -56,13 +57,14 @@
 		9AE50E1B28F9E8D3004DF1EE /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		9AEACCB928D037FA00783F28 /* CompanyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPage.swift; sourceTree = "<group>"; };
 		9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarterInitiated.swift; sourceTree = "<group>"; };
+		9AFB30B428F799ED003FD182 /* DocumentUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUpload.swift; sourceTree = "<group>"; };
 		9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingServices.swift; sourceTree = "<group>"; };
 		9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarterSpecializedServices.swift; sourceTree = "<group>"; };
 		9ED972C328F719B100CDDE24 /* LaborServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborServices.swift; sourceTree = "<group>"; };
 		9ED972C428F719B100CDDE24 /* FoodServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodServices.swift; sourceTree = "<group>"; };
 		9ED972C528F719B100CDDE24 /* BusinessServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessServices.swift; sourceTree = "<group>"; };
 		9ED972C628F719B100CDDE24 /* MiscServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscServices.swift; sourceTree = "<group>"; };
-		9AFB30B428F799ED003FD182 /* DocumentUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUpload.swift; sourceTree = "<group>"; };
+		BF591C8129148D1C004FF9FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppApp.swift; sourceTree = "<group>"; };
 		FB2A948F28CA9B7800F64DF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,12 +139,11 @@
 				9A88224C28DE683C00995674 /* LoginPage.swift */,
 				9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */,
 				9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */,
-
 				9AE50E1B28F9E8D3004DF1EE /* ChatPage.swift */,
 				9A44D9112904BD4D00BC7389 /* InputOffer.swift */,
 				9ABD6F62290B301600332EFA /* ProfilePage.swift */,
 				9AFB30B428F799ED003FD182 /* DocumentUpload.swift */,
-
+				BF591C8129148D1C004FF9FC /* Settings.swift */,
 			);
 			path = BarteringApp;
 			sourceTree = "<group>";
@@ -306,6 +307,7 @@
 				9ED972C728F719B100CDDE24 /* FoodServices.swift in Sources */,
 				9ED972CB28F719B100CDDE24 /* BarterSpecializedServices.swift in Sources */,
 				9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */,
+				BF591C8229148D1C004FF9FC /* Settings.swift in Sources */,
 				FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */,
 				9A44D9122904BD4D00BC7389 /* InputOffer.swift in Sources */,
 				9AFB30B528F799ED003FD182 /* DocumentUpload.swift in Sources */,
