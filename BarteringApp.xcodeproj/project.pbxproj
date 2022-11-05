@@ -101,6 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF591C83291702AA004FF9FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9ED972C628F719B100CDDE24 /* MiscServices.swift */,
+				9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */,
+				9ED972C328F719B100CDDE24 /* LaborServices.swift */,
+				9ED972C428F719B100CDDE24 /* FoodServices.swift */,
+				9ED972C528F719B100CDDE24 /* BusinessServices.swift */,
+				9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FB2A948128CA9B7800F64DF1 = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +137,7 @@
 		FB2A948C28CA9B7800F64DF1 /* BarteringApp */ = {
 			isa = PBXGroup;
 			children = (
-				9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */,
-				9ED972C528F719B100CDDE24 /* BusinessServices.swift */,
-				9ED972C428F719B100CDDE24 /* FoodServices.swift */,
-				9ED972C328F719B100CDDE24 /* LaborServices.swift */,
-				9ED972C628F719B100CDDE24 /* MiscServices.swift */,
-				9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */,
+				BF591C83291702AA004FF9FC /* Services */,
 				FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */,
 				FB2A948F28CA9B7800F64DF1 /* ContentView.swift */,
 				FB2A949128CA9B7900F64DF1 /* Assets.xcassets */,
