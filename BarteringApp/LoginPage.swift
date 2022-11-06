@@ -50,6 +50,7 @@ struct LoginPage: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .foregroundColor(Color("Turquoise")).font(.callout.bold())
                 NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
+                    //COME BACK AND CHANGE THIS LATER!!!!
                 Text("Login")
                     .font(Font.custom("Nunito", size: 17))
             }
@@ -109,7 +110,9 @@ struct LoginPage: View {
             Spacer()
             HStack {
                 Text("Don't have an account?").foregroundColor(Color(.black)).font(.callout.bold())
+                NavigationLink(destination: Create_Account().navigationBarBackButtonHidden(true)) {
                 Text("Sign Up").foregroundColor(Color("Turquoise")).font(.callout.bold())
+                }
             }
             Spacer()
         }.padding(15).navigationBarHidden(true)

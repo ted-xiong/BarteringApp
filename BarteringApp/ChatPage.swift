@@ -77,7 +77,7 @@ struct ChatPage: View {
                 Text("That's a deal!")
             }.frame(width: 150, height: 50)
                 Spacer()
-                NavigationLink(destination: BarterInitiated()) {
+                NavigationLink(destination: BarterInitiated().navigationBarBackButtonHidden(true)) {
                     Image("InitiateBarter")
                         .resizable()
                         .frame(width: 70, height: 70)
