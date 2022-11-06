@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CompanyPage: View {
     var body: some View {
+        NavigationView {
         VStack {
             ZStack {
                 Rectangle()
                     .fill(Color("custom cyan"))
                 VStack (alignment: .leading) {
                     HStack {
-                        
                         Image("DesignLogo")
                             .resizable()
                             .frame(width: 90, height: 90)
@@ -34,7 +34,7 @@ struct CompanyPage: View {
             VStack  (alignment: .leading) {
                 HStack {
                     VStack {
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                        Text("Squeaky Cleanz is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
                             .font(.caption)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(2)
@@ -103,17 +103,25 @@ struct CompanyPage: View {
                         }
                     }
                     Spacer()
-                Button (action: {print("whatever")}) {
-                    Text("Chat Now")
-                        .font(Font.custom("Nunito", size: 20))
-                        .padding(15)
-                        .foregroundColor(Color.white)
-                        .background(Color("Turquoise"))
-                        .cornerRadius(10)
-                }
+                    NavigationLink(destination: ChatPage()) {
+                        RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color("Turquoise"))
+                                    .overlay(Text("Chat Now")).foregroundColor(Color.white)
+                                    .frame(width: 100, height: 50, alignment: .trailing)
+                                    }
+//                Button (action: {print("whatever")}) {
+//                    Text("Chat Now")
+//                        .font(Font.custom("Nunito", size: 20))
+//                        .padding(15)
+//                        .foregroundColor(Color.white)
+//                        .background(Color("Turquoise"))
+//                        .cornerRadius(10)
+//                }
                 }.padding()
             }
-        }
+        }.navigationTitle("")
+        .navigationBarHidden(true)
+    }
     }
 }
 

@@ -13,6 +13,7 @@ struct Create_Account: View {
     @State var password: String = ""
     @State var passwordConfirm: String = ""
     var body: some View {
+        NavigationView {
         VStack {
             Text("Create an account").font(.largeTitle.bold())
             Spacer(minLength: 10)
@@ -86,9 +87,12 @@ struct Create_Account: View {
             
             HStack{
                 Text("Already have an account?").font(.system(size:15))
+                NavigationLink(destination: Create_Account().navigationBarBackButtonHidden(true)) {
                 Text("Sign in").foregroundColor(Color("Turquoise")).font(.system(size:15))
+                }
             }
-        }.padding(15)
+        }.padding(15).navigationBarHidden(true)
+        }
     }
 }
 
