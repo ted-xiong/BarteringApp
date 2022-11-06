@@ -11,6 +11,7 @@ struct LoginPage: View {
     @State var username: String = ""
     @State var password: String = ""
     var body: some View {
+        NavigationView {
         VStack {
             Text("The Barter Shop").font(.largeTitle.bold())
             Spacer(minLength: 10)
@@ -48,7 +49,7 @@ struct LoginPage: View {
                 .multilineTextAlignment(.trailing)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .foregroundColor(Color("Turquoise")).font(.callout.bold())
-            Button (action: {print("whatever")}) {
+                NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
                 Text("Login")
                     .font(Font.custom("Nunito", size: 17))
             }
@@ -111,7 +112,8 @@ struct LoginPage: View {
                 Text("Sign Up").foregroundColor(Color("Turquoise")).font(.callout.bold())
             }
             Spacer()
-        }.padding(15)
+        }.padding(15).navigationBarHidden(true)
+    }
     }
 }
 
