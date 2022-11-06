@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ProfilePage: View {
     var body: some View {
+        NavigationView {
         VStack {
             ZStack {
             Rectangle()
                 .fill(Color("Bread"))
                 VStack {
                     HStack {
-                        Image("BarterBuck").frame(width: 40, height: 40, alignment: .leading).clipShape(Circle()).padding()
-                        Image(systemName: "pencil").frame(maxWidth: .infinity, alignment: .trailing).padding()
+                        Image("Coin").resizable().frame(width: 25, height: 25, alignment: .leading).clipShape(Circle()).padding()
+                        Spacer()
+                        NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
+                        Image("Setting").resizable().frame(width: 25, height: 25, alignment: .trailing).padding()
+                        }
                     }
             Image("Lady")
                 .resizable()
@@ -94,7 +98,8 @@ struct ProfilePage: View {
                     
                 }
             }
-        }
+        }.navigationBarHidden(true)
+    }
     }
 }
 

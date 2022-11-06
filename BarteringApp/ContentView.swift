@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            ChatPage()
+            ProfilePage()
     }
     
     struct ContentView_Previews: PreviewProvider {
