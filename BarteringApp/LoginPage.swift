@@ -48,7 +48,8 @@ struct LoginPage: View {
             Text("forget password?")
                 .multilineTextAlignment(.trailing)
                 .frame(maxWidth: .infinity, alignment: .trailing)
-                .foregroundColor(Color("Turquoise")).font(.callout.bold())
+
+                .foregroundColor(Color("turquoise")).font(.callout.bold())
                 NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
                     //COME BACK AND CHANGE THIS LATER!!!!
                 Text("Login")
@@ -57,7 +58,7 @@ struct LoginPage: View {
             .frame(maxWidth: .infinity, minHeight: 25)
             .padding(10)
             .foregroundColor(Color.white)
-            .background(Color("Turquoise"))
+            .background(Color("turquoise"))
             .cornerRadius(20)
             }
             HStack {
@@ -110,8 +111,9 @@ struct LoginPage: View {
             Spacer()
             HStack {
                 Text("Don't have an account?").foregroundColor(Color(.black)).font(.callout.bold())
+
                 NavigationLink(destination: Create_Account().navigationBarBackButtonHidden(true)) {
-                Text("Sign Up").foregroundColor(Color("Turquoise")).font(.callout.bold())
+                Text("Sign Up").foregroundColor(Color("turquoise")).font(.callout.bold())
                 }
             }
             Spacer()

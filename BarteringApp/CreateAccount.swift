@@ -82,13 +82,14 @@ struct Create_Account: View {
             .frame(maxWidth: 230, minHeight: 25)
             .padding(10)
             .foregroundColor(Color.white)
-            .background(Color("Turquoise"))
+            .background(Color("turquoise"))
             .cornerRadius(20)
             
             HStack{
                 Text("Already have an account?").font(.system(size:15))
+
                 NavigationLink(destination: Create_Account().navigationBarBackButtonHidden(true)) {
-                Text("Sign in").foregroundColor(Color("Turquoise")).font(.system(size:15))
+                Text("Sign in").foregroundColor(Color("turquoise")).font(.system(size:15))
                 }
             }
         }.padding(15).navigationBarHidden(true)

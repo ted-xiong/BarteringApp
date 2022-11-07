@@ -39,18 +39,18 @@ struct BarterInitiated: View {
                 Color("Bread").ignoresSafeArea()
                 
                 HStack{
-                    Rectangle().fill(Color("Turquoise")).frame(width: 130, height: 90, alignment: .center).cornerRadius(30, corners: [.topRight, .bottomRight])
+                    Rectangle().fill(Color("turquoise")).frame(width: 130, height: 90, alignment: .center).cornerRadius(30, corners: [.topRight, .bottomRight])
                     Spacer()
                     Rectangle().fill(Color("Salmon")).frame(width: 130, height: 90, alignment: .center).cornerRadius(30, corners: [.topLeft, .bottomLeft])
                 }
                 
                 VStack (alignment:.center){
-                    Text("We have a deal!").padding().font(.system(size:15)).foregroundColor(Color("Turquoise"))
+                    Text("We have a deal!").padding().font(.system(size:15)).foregroundColor(Color("turquoise"))
                     Spacer()
                     HStack{
                         Circle().fill(Color("CremeBrulee")).frame(width: 35, height: 35)
                         Spacer()
-                        Circle().fill(Color("Turquoise")).frame(width: 35, height: 35)
+                        Circle().fill(Color("turquoise")).frame(width: 35, height: 35)
                     }.frame(width: 80)
                     Spacer()
                     Spacer()
@@ -101,19 +101,19 @@ struct BarterInitiated: View {
             
             ZStack{
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                .strokeBorder(Color("Turquoise"), lineWidth: 1)
+                                .strokeBorder(Color("turquoise"), lineWidth: 1)
                                 .background(RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color.white))
                                 .frame(width: 280, height: 90)
                 HStack{
                     VStack{
-                        Text("Offering").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                        Text("Offering").font(.system(size:11)).foregroundColor(Color("turquoise"))
                         Text("Cafe Items").font(.system(size:15))
                     }
                     
                     Divider()
                     
                     VStack{
-                        Text("For").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                        Text("For").font(.system(size:11)).foregroundColor(Color("turquoise"))
             
                         Text("Window Cleanings").font(.system(size:15))
                     }
@@ -121,7 +121,7 @@ struct BarterInitiated: View {
                     Divider()
                     
                     VStack{
-                        Text("When").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                        Text("When").font(.system(size:11)).foregroundColor(Color("turquoise"))
                         Text("4:30 pm").font(.system(size:15))
                     }
                 }.frame(width: 270, height: 60)
@@ -131,7 +131,7 @@ struct BarterInitiated: View {
             Text("We will follow up with both parties to make sure the deal has followed through! Thank you for using The Barter Shop.").font(.system(size:11)).padding()
             Spacer()
             ZStack {
-                RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color("Turquoise")).frame(width: 200, height: 40).position(x: 163, y: 30)
+                RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color("turquoise")).frame(width: 200, height: 40).position(x: 163, y: 30)
                 Text("Back To Chat").font(.system(size:15)).position(x: 163, y: 30).foregroundColor(.white)
             }
         }
