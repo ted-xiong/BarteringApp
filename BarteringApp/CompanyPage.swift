@@ -13,7 +13,7 @@ struct CompanyPage: View {
         VStack {
             ZStack {
                 Rectangle()
-                    .fill(Color("Turquoise"))
+                    .fill(Color("turquoise"))
                 VStack (alignment: .leading) {
                     HStack {
                         Image("DesignLogo")
@@ -105,7 +105,7 @@ struct CompanyPage: View {
                     Spacer()
                     NavigationLink(destination: ChatPage()) {
                         RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color("Turquoise"))
+                                    .fill(Color("turquoise"))
                                     .overlay(Text("Chat Now")).foregroundColor(Color.white)
                                     .frame(width: 100, height: 50, alignment: .trailing)
                                     }

@@ -24,6 +24,15 @@
 		9ED972CC28F719B100CDDE24 /* MiscServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C628F719B100CDDE24 /* MiscServices.swift */; };
 		BF591C8229148D1C004FF9FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8129148D1C004FF9FC /* Settings.swift */; };
 		BF591C8729179291004FF9FC /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8629179291004FF9FC /* TitleRow.swift */; };
+		BF591C8A291857B8004FF9FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C89291857B8004FF9FC /* Message.swift */; };
+		BF591C8C29185819004FF9FC /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8B29185819004FF9FC /* MessageBubble.swift */; };
+		BF591C8E29185B74004FF9FC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8D29185B74004FF9FC /* MessageView.swift */; };
+		BF591C9029185E76004FF9FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8F29185E76004FF9FC /* Extensions.swift */; };
+		BF591C922918CE26004FF9FC /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C912918CE26004FF9FC /* MessageField.swift */; };
+		BF591C942918DBDE004FF9FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */; };
+		BF591C972918DE3D004FF9FC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C962918DE3D004FF9FC /* FirebaseFirestore */; };
+		BF591C992918DE3D004FF9FC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */; };
+		BF591C9B29196A06004FF9FC /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C9A29196A06004FF9FC /* MessagesManager.swift */; };
 		FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */; };
 		FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948F28CA9B7800F64DF1 /* ContentView.swift */; };
 		FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A949128CA9B7900F64DF1 /* Assets.xcassets */; };
@@ -67,6 +76,13 @@
 		9ED972C628F719B100CDDE24 /* MiscServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscServices.swift; sourceTree = "<group>"; };
 		BF591C8129148D1C004FF9FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BF591C8629179291004FF9FC /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		BF591C89291857B8004FF9FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BF591C8B29185819004FF9FC /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		BF591C8D29185B74004FF9FC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		BF591C8F29185E76004FF9FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BF591C912918CE26004FF9FC /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF591C9A29196A06004FF9FC /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppApp.swift; sourceTree = "<group>"; };
 		FB2A948F28CA9B7800F64DF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF591C972918DE3D004FF9FC /* FirebaseFirestore in Frameworks */,
+				BF591C992918DE3D004FF9FC /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +137,11 @@
 		BF591C8429179252004FF9FC /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				BF591C882918578E004FF9FC /* Models */,
 				BF591C852917926E004FF9FC /* Components */,
+				BF591C8D29185B74004FF9FC /* MessageView.swift */,
+				BF591C8F29185E76004FF9FC /* Extensions.swift */,
+				BF591C9A29196A06004FF9FC /* MessagesManager.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -128,8 +150,18 @@
 			isa = PBXGroup;
 			children = (
 				BF591C8629179291004FF9FC /* TitleRow.swift */,
+				BF591C8B29185819004FF9FC /* MessageBubble.swift */,
+				BF591C912918CE26004FF9FC /* MessageField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		BF591C882918578E004FF9FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF591C89291857B8004FF9FC /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FB2A948128CA9B7800F64DF1 = {
@@ -155,6 +187,7 @@
 		FB2A948C28CA9B7800F64DF1 /* BarteringApp */ = {
 			isa = PBXGroup;
 			children = (
+				BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */,
 				BF591C8429179252004FF9FC /* Messages */,
 				BF591C83291702AA004FF9FC /* Services */,
 				FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */,
@@ -215,6 +248,10 @@
 			dependencies = (
 			);
 			name = BarteringApp;
+			packageProductDependencies = (
+				BF591C962918DE3D004FF9FC /* FirebaseFirestore */,
+				BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */,
+			);
 			productName = BarteringApp;
 			productReference = FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +324,9 @@
 				Base,
 			);
 			mainGroup = FB2A948128CA9B7800F64DF1;
+			packageReferences = (
+				BF591C952918DE3D004FF9FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FB2A948B28CA9B7800F64DF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */,
+				BF591C942918DBDE004FF9FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,24 +369,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF591C9029185E76004FF9FC /* Extensions.swift in Sources */,
 				9ED972CC28F719B100CDDE24 /* MiscServices.swift in Sources */,
 				BF591C8729179291004FF9FC /* TitleRow.swift in Sources */,
 				9A9C4B1428E52D8800C05EB5 /* VerifyBusiness.swift in Sources */,
 				9ED972CA28F719B100CDDE24 /* ProgrammingServices.swift in Sources */,
 				9ED972C728F719B100CDDE24 /* FoodServices.swift in Sources */,
 				9ED972CB28F719B100CDDE24 /* BarterSpecializedServices.swift in Sources */,
+				BF591C8E29185B74004FF9FC /* MessageView.swift in Sources */,
 				9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */,
 				BF591C8229148D1C004FF9FC /* Settings.swift in Sources */,
 				FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */,
 				9A44D9122904BD4D00BC7389 /* InputOffer.swift in Sources */,
+				BF591C8C29185819004FF9FC /* MessageBubble.swift in Sources */,
 				9AFB30B528F799ED003FD182 /* DocumentUpload.swift in Sources */,
+				BF591C9B29196A06004FF9FC /* MessagesManager.swift in Sources */,
 				9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources */,
 				9AE50E1C28F9E8D3004DF1EE /* ChatPage.swift in Sources */,
 				9ABD6F63290B301600332EFA /* ProfilePage.swift in Sources */,
 				FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */,
 				9ED972C928F719B100CDDE24 /* LaborServices.swift in Sources */,
 				9A88224D28DE683C00995674 /* LoginPage.swift in Sources */,
+				BF591C8A291857B8004FF9FC /* Message.swift in Sources */,
 				9AEACCBC28D038BD00783F28 /* BarterInitiated.swift in Sources */,
+				BF591C922918CE26004FF9FC /* MessageField.swift in Sources */,
 				9ED972C828F719B100CDDE24 /* BusinessServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +718,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF591C952918DE3D004FF9FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF591C962918DE3D004FF9FC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF591C952918DE3D004FF9FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF591C952918DE3D004FF9FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB2A948228CA9B7800F64DF1 /* Project object */;
 }
