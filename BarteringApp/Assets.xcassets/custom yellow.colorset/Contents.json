@@ -1,7 +1,6 @@
 {
   "colors" : [
     {
-<<<<<<< HEAD
       "color" : {
         "color-space" : "srgb",
         "components" : {
@@ -11,8 +10,6 @@
           "red" : "0xFE"
         }
       },
-=======
->>>>>>> main
       "idiom" : "universal"
     },
     {
@@ -26,15 +23,12 @@
         "color-space" : "srgb",
         "components" : {
           "alpha" : "1.000",
-<<<<<<< HEAD
           "blue" : "0xFF",
           "green" : "0xFF",
-          "red" : "0xFF"
-=======
+          "red" : "0xFF",
           "blue" : "0.400",
           "green" : "0.929",
           "red" : "0.996"
->>>>>>> main
         }
       },
       "idiom" : "universal"
