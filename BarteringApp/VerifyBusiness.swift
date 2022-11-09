@@ -15,114 +15,116 @@ struct VerifyBusiness: View {
     @State var passwordConfirm: String = ""
     @State var showSheet: Bool = false
     var body: some View {
-        VStack {
-            Text("Verify your business").font(.largeTitle.bold())
-            Spacer(minLength: 40)
-            Group{
+        NavigationView{
+            VStack {
+                Text("Verify your business").font(.largeTitle.bold())
+                Spacer(minLength: 40)
                 Group{
-                    HStack {
-                        Image(systemName: "person").foregroundColor(Color.gray)
-                        VStack {
-                    TextField("First Name", text: $username).textFieldStyle(DefaultTextFieldStyle())
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
+                    Group{
+                        HStack {
+                            Image(systemName: "person").foregroundColor(Color.gray)
+                            VStack {
+                                TextField("First Name", text: $username).textFieldStyle(DefaultTextFieldStyle())
+                                Divider()
+                                    .frame(height: 1)
+                                    .padding(.horizontal, 30)
+                                    .background(Color.gray)
+                            }
+                        }
+                        
+                    }
+                    Group{
+                        Spacer(minLength: 20)
+                        HStack {
+                            Image(systemName: "person").foregroundColor(Color.gray)
+                            VStack {
+                                TextField("Last Name", text: $emailAddress).textFieldStyle(DefaultTextFieldStyle())
+                                Divider()
+                                    .frame(height: 1)
+                                    .padding(.horizontal, 30)
+                                    .background(Color.gray)
+                            }
                         }
                     }
-
-                }
-                Group{
-                    Spacer(minLength: 20)
-                    HStack {
-                        Image(systemName: "person").foregroundColor(Color.gray)
-                        VStack {
-                    TextField("Last Name", text: $emailAddress).textFieldStyle(DefaultTextFieldStyle())
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
+                    
+                    Group{
+                        Spacer(minLength: 20)
+                        HStack {
+                            Image(systemName: "building.2").foregroundColor(Color.gray)
+                            VStack {
+                                HStack {
+                                    TextField("Name of business", text: $password).textFieldStyle(DefaultTextFieldStyle())
+                                }
+                                Divider()
+                                    .frame(height: 1)
+                                    .padding(.horizontal, 30)
+                                    .background(Color.gray)
+                            }
+                        }
+                    }
+                    Group{
+                        Spacer(minLength: 20)
+                        HStack {
+                            Image(systemName: "house").foregroundColor(Color.gray)
+                            VStack {
+                                HStack {
+                                    TextField("Address", text: $passwordConfirm).textFieldStyle(DefaultTextFieldStyle())
+                                }
+                                Divider()
+                                    .frame(height: 1)
+                                    .padding(.horizontal, 30)
+                                    .background(Color.gray)
+                            }
+                        }
+                    }
+                    Group{
+                        Spacer(minLength: 20)
+                        Button(action: {
+                            showSheet.toggle()
+                        }, label: {
+                            Text("Services")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .background(Color.gray.cornerRadius(3))
+                                .padding(30)
+                                .frame(width: 350, height: 50, alignment: .leading)
+                        })
+                        .sheet(isPresented: $showSheet, content: {
+                            SecondScreen()
+                        })
+                    }
+                    Group{
+                        Spacer(minLength: 20)
+                        HStack {
+                            Image(systemName: "number.square").foregroundColor(Color.gray)
+                            VStack {
+                                HStack {
+                                    TextField("EIN Number", text: $passwordConfirm).textFieldStyle(DefaultTextFieldStyle())
+                                }
+                                Divider()
+                                    .frame(height: 1)
+                                    .padding(.horizontal, 30)
+                                    .background(Color.gray)
+                            }
                         }
                     }
                 }
+                Spacer(minLength: 20)
+                NavigationLink(destination: DocumentUpload().navigationBarBackButtonHidden(true)) {
+                    Text("Upload Documents")
+                        .font(Font.custom("Nunito", size: 17))
+                }
+                .frame(maxWidth: 230, minHeight: 25)
+                .padding(10)
+                .foregroundColor(Color.white)
+                .background(Color("Turquoise"))
+                .cornerRadius(20)
+                .padding(10)
                 
-                Group{
-                    Spacer(minLength: 20)
-                    HStack {
-                        Image(systemName: "building.2").foregroundColor(Color.gray)
-                        VStack {
-                            HStack {
-                    TextField("Name of business", text: $password).textFieldStyle(DefaultTextFieldStyle())
-                            }
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
-                        }
-                    }
-                }
-                Group{
-                    Spacer(minLength: 20)
-                    HStack {
-                        Image(systemName: "house").foregroundColor(Color.gray)
-                        VStack {
-                            HStack {
-                    TextField("Address", text: $passwordConfirm).textFieldStyle(DefaultTextFieldStyle())
-                            }
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
-                        }
-                    }
-                }
-                Group{
-                    Spacer(minLength: 20)
-                    Button(action: {
-                        showSheet.toggle()
-                    }, label: {
-                        Text("Services")
-                            .foregroundColor(.white)
-                            .font(.headline)
-                            .background(Color.gray.cornerRadius(3))
-                            .padding(30)
-                            .frame(width: 350, height: 50, alignment: .leading)
-                    })
-                    .sheet(isPresented: $showSheet, content: {
-                        SecondScreen()
-                    })
-                }
-                Group{
-                    Spacer(minLength: 20)
-                    HStack {
-                        Image(systemName: "number.square").foregroundColor(Color.gray)
-                        VStack {
-                            HStack {
-                    TextField("EIN Number", text: $passwordConfirm).textFieldStyle(DefaultTextFieldStyle())
-                            }
-                            Divider()
-                             .frame(height: 1)
-                             .padding(.horizontal, 30)
-                             .background(Color.gray)
-                        }
-                    }
-                }
-            }
-            Spacer(minLength: 20)
-            Button (action: {print("pressed")}) {
-                Text("Upload Documents")
-                    .font(Font.custom("Nunito", size: 20))
-            }
-            .frame(maxWidth: 230, minHeight: 25)
-            .padding(10)
-            .foregroundColor(Color.white)
-            .background(Color("turquoise"))
-            .cornerRadius(20)
-            
-        }.padding(15)
+            }.padding(15)
+        }
     }
 }
-
 struct SecondScreen: View{
     
     var body: some View{
