@@ -75,6 +75,7 @@ struct Create_Account: View {
             }
             Spacer(minLength: 20)
             
+
             NavigationLink(destination: DocumentUpload().navigationBarBackButtonHidden(true)) {
             Text("Create Account")
                 .font(Font.custom("Nunito", size: 17))

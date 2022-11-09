@@ -36,6 +36,7 @@ struct DocumentUpload: View {
                         }
                     }
                 }
+
                 
                 
                 .frame(maxWidth: 250, minHeight: 150)
