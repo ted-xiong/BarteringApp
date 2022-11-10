@@ -28,9 +28,10 @@ struct MessageView: View {
                         .onChange(of: messagesManager.lastMessageId) { id in withAnimation { proxy.scrollTo(id, anchor: .bottom)
                             }
                         }
+
                     }
-                }
-                .background(Color("peach"))
+
+                }.background(Color("beige"))
                 
                 MessageField()
                     .environmentObject(messagesManager)

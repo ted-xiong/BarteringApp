@@ -12,7 +12,7 @@ struct TitleRow: View {
     var name = "Charlese"
     
     var body: some View {
-        NavigationView {
+        
             HStack(spacing: 20) {
                 image
                     .resizable()
@@ -41,7 +41,6 @@ struct TitleRow: View {
                         .padding(15)
                 }
             }
-        }.frame(width: .infinity, height: 100, alignment: .center)
     }
 }
 
