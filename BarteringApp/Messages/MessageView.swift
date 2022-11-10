@@ -9,26 +9,32 @@ import SwiftUI
 
 struct MessageView: View {
     @StateObject var messagesManager = MessagesManager()
-    var messageArray = ["Hello", "How u doing fam", "I need some new kicks, looking for some Jordan 11s, willing to give my Jordan 8s for em"]
-    
     
     var body: some View {
-        VStack {
+        NavigationView {
             VStack {
-                TitleRow()
-                
-                ScrollView {
-                    ForEach(messagesManager.messages, id: \.id) { message in MessageBubble(message: message)
-                        
+                VStack {
+                    TitleRow()
+                    
+                    ScrollViewReader { proxy in
+                        ScrollView {
+                            ForEach(messagesManager.messages, id: \.id) { message in MessageBubble(message: message)
+                                
+                            }
+                        }
+                        .padding(.top, 10)
+                        .background(.white)
+                        .cornerRadiusMessages(30, corners: [.topLeft, .topRight])
+                        .onChange(of: messagesManager.lastMessageId) { id in withAnimation { proxy.scrollTo(id, anchor: .bottom)
+                            }
+                        }
                     }
                 }
-                .padding(.top, 10)
-                .background(.white)
-                .cornerRadiusMessages(30, corners: [.topLeft, .topRight])
+                .background(Color("peach"))
+                
+                MessageField()
+                    .environmentObject(messagesManager)
             }
-            .background(Color("beige"))
-            
-            MessageField()
         }
         
     }

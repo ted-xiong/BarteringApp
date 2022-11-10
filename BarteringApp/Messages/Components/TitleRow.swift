@@ -12,32 +12,36 @@ struct TitleRow: View {
     var name = "Charlese"
     
     var body: some View {
-        HStack(spacing: 20) {
-            image
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
-                .cornerRadius(50)
-             
-            
-            VStack(alignment: .leading) {
-                Text(name)
-                    .font(.title).bold()
+        NavigationView {
+            HStack(spacing: 20) {
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(50)
+                 
                 
-                Text("Online")
-                    .font(.caption)
-                    .foregroundColor(Color("turquoise"))
+                VStack(alignment: .leading) {
+                    Text(name)
+                        .font(.title).bold()
+                    
+                    Text("Online")
+                        .font(.caption)
+                        .foregroundColor(Color("turquoise"))
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
                 
+                NavigationLink(destination: BarterInitiated()) {
+                    Image("InitiateBarter")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .clipShape(Circle())
+                        .shadow(color: .yellow, radius: 10)
+                        .padding(15)
+                }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Image("InitiateBarter")
-                .resizable()
-                .frame(width: 60, height: 60)
-                .clipShape(Circle())
-                .shadow(color: .yellow, radius: 10)
-    
-        }
+        }.frame(width: .infinity, height: 100, alignment: .center)
     }
 }
 
