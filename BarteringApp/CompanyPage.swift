@@ -103,7 +103,7 @@ struct CompanyPage: View {
                         }
                     }
                     Spacer()
-                    NavigationLink(destination: ChatPage()) {
+                    NavigationLink(destination: MessageView()) {
                         RoundedRectangle(cornerRadius: 10)
                                     .fill(Color("turquoise"))
                                     .overlay(Text("Chat Now")).foregroundColor(Color.white)

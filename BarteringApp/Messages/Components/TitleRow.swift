@@ -32,7 +32,7 @@ struct TitleRow: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                NavigationLink(destination: BarterInitiated()) {
+                NavigationLink(destination: BarterInitiated2()) {
                     Image("InitiateBarter")
                         .resizable()
                         .frame(width: 60, height: 60)

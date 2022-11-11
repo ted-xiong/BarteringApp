@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            MessageView()
+            CompanyPage ()
     }
     
     struct ContentView_Previews: PreviewProvider {
