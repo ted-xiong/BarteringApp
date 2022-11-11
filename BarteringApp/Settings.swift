@@ -21,10 +21,17 @@ struct SettingRowView : View {
 
 struct Settings: View {
 
-
     var body: some View {
         NavigationView{
+            
             VStack{
+                HStack {
+                    NavigationLink(destination: ProfilePage()) {
+                        Image(systemName: "chevron.left")
+                    }
+                    Text("Settings").font(.title).bold()
+                }
+                
                 List {
                     NavigationLink(destination: EmptyView(), label: {
                                  SettingRowView(title: "General",
@@ -62,7 +69,7 @@ struct Settings: View {
                 }
                 .frame(maxWidth: .infinity)
 
-            }.navigationTitle("Settings")
+            }//.navigationTitle("Settings")
         }
     }
 
