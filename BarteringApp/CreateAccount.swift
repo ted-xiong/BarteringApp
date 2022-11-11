@@ -13,6 +13,7 @@ struct Create_Account: View {
     @State var password: String = ""
     @State var passwordConfirm: String = ""
     var body: some View {
+        NavigationView {
         VStack {
             Text("Create an account").font(.largeTitle.bold())
             Spacer(minLength: 10)
@@ -74,21 +75,25 @@ struct Create_Account: View {
             }
             Spacer(minLength: 20)
             
-            Button (action: {print("pressed")}) {
-                Text("Create")
-                    .font(Font.custom("Nunito", size: 20))
-            }
-            .frame(maxWidth: 230, minHeight: 25)
-            .padding(10)
-            .foregroundColor(Color.white)
-            .background(Color("turquoise"))
-            .cornerRadius(20)
+
+            NavigationLink(destination: DocumentUpload().navigationBarBackButtonHidden(true)) {
+            Text("Create Account")
+                .font(Font.custom("Nunito", size: 17))
+        }
+        .frame(maxWidth: 230, minHeight: 25)
+        .padding(10)
+        .foregroundColor(Color.white)
+        .background(Color("Turquoise"))
+        .cornerRadius(20)
             
             HStack{
                 Text("Already have an account?").font(.system(size:15))
-                Text("Sign in").foregroundColor(Color("turquoise")).font(.system(size:15))
+                NavigationLink(destination: LoginPage().navigationBarBackButtonHidden(true)) {
+                Text("Sign in").foregroundColor(Color("Turquoise")).font(.system(size:15))
+                }
             }
-        }.padding(15)
+        }.padding(15).navigationBarHidden(true)
+        }
     }
 }
 
