@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		9A44D9122904BD4D00BC7389 /* InputOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A44D9112904BD4D00BC7389 /* InputOffer.swift */; };
+		9A84CCA0291F095C004528B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A84CC9F291F095B004528B7 /* GoogleService-Info.plist */; };
 		9A88224D28DE683C00995674 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88224C28DE683C00995674 /* LoginPage.swift */; };
 		9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */; };
 		9A9C4B1428E52D8800C05EB5 /* VerifyBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */; };
@@ -30,7 +30,6 @@
 		BF591C8E29185B74004FF9FC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8D29185B74004FF9FC /* MessageView.swift */; };
 		BF591C9029185E76004FF9FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C8F29185E76004FF9FC /* Extensions.swift */; };
 		BF591C922918CE26004FF9FC /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C912918CE26004FF9FC /* MessageField.swift */; };
-		BF591C942918DBDE004FF9FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */; };
 		BF591C972918DE3D004FF9FC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C962918DE3D004FF9FC /* FirebaseFirestore */; };
 		BF591C992918DE3D004FF9FC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */; };
 		BF591C9B29196A06004FF9FC /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C9A29196A06004FF9FC /* MessagesManager.swift */; };
@@ -40,76 +39,19 @@
 		FB2A949F28CA9B7900F64DF1 /* BarteringAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */; };
 		FB2A94A928CA9B7900F64DF1 /* BarteringAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */; };
 		FB2A94AB28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94AA28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift */; };
-
-		9A88224D28DE683C00995674 /* LoginPage.swift in Sources */ 
-= {isa = PBXBuildFile; fileRef = 9A88224C28DE683C00995674 /* 
-LoginPage.swift */; };
-		9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = 9A9C4B1128E527CC00C05EB5 /* 
-CreateAccount.swift */; };
-		9A9C4B1428E52D8800C05EB5 /* VerifyBusiness.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4B1328E52D8800C05EB5 /* 
-VerifyBusiness.swift */; };
-		9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = 9AEACCB928D037FA00783F28 /* 
-CompanyPage.swift */; };
-		9AEACCBC28D038BD00783F28 /* BarterInitiated.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = 9AEACCBB28D038BD00783F28 /* 
-BarterInitiated.swift */; };
-		9ED972C728F719B100CDDE24 /* FoodServices.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = 9ED972C428F719B100CDDE24 /* 
-FoodServices.swift */; };
-		9ED972C828F719B100CDDE24 /* BusinessServices.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C528F719B100CDDE24 /* 
-BusinessServices.swift */; };
-		9ED972C928F719B100CDDE24 /* LaborServices.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = 9ED972C328F719B100CDDE24 /* 
-LaborServices.swift */; };
-		9ED972CA28F719B100CDDE24 /* ProgrammingServices.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = 9ED972C128F719B100CDDE24 /* 
-ProgrammingServices.swift */; };
-		9ED972CB28F719B100CDDE24 /* 
-BarterSpecializedServices.swift in Sources */ = {isa = PBXBuildFile; 
-fileRef = 9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */; 
-};
-		9ED972CC28F719B100CDDE24 /* MiscServices.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = 9ED972C628F719B100CDDE24 /* 
-MiscServices.swift */; };
-		FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = FB2A948D28CA9B7800F64DF1 /* 
-BarteringAppApp.swift */; };
-		FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources 
-*/ = {isa = PBXBuildFile; fileRef = FB2A948F28CA9B7800F64DF1 /* 
-ContentView.swift */; };
-		FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources 
-*/ = {isa = PBXBuildFile; fileRef = FB2A949128CA9B7900F64DF1 /* 
-Assets.xcassets */; };
-		FB2A949F28CA9B7900F64DF1 /* BarteringAppTests.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = FB2A949E28CA9B7900F64DF1 /* 
-BarteringAppTests.swift */; };
-		FB2A94A928CA9B7900F64DF1 /* BarteringAppUITests.swift in 
-Sources */ = {isa = PBXBuildFile; fileRef = FB2A94A828CA9B7900F64DF1 /* 
-BarteringAppUITests.swift */; };
-		FB2A94AB28CA9B7900F64DF1 /* 
-BarteringAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; 
-fileRef = FB2A94AA28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift 
-*/; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FB2A949B28CA9B7900F64DF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FB2A948228CA9B7800F64DF1 /* 
-Project object */;
+			containerPortal = FB2A948228CA9B7800F64DF1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FB2A948928CA9B7800F64DF1;
 			remoteInfo = BarteringApp;
 		};
 		FB2A94A528CA9B7900F64DF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FB2A948228CA9B7800F64DF1 /* 
-Project object */;
+			containerPortal = FB2A948228CA9B7800F64DF1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FB2A948928CA9B7800F64DF1;
 			remoteInfo = BarteringApp;
@@ -117,8 +59,8 @@ Project object */;
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
 		9A44D9112904BD4D00BC7389 /* InputOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOffer.swift; sourceTree = "<group>"; };
+		9A84CC9F291F095B004528B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A88224C28DE683C00995674 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyBusiness.swift; sourceTree = "<group>"; };
@@ -140,7 +82,6 @@ Project object */;
 		BF591C8D29185B74004FF9FC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		BF591C8F29185E76004FF9FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BF591C912918CE26004FF9FC /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
-		BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF591C9A29196A06004FF9FC /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppApp.swift; sourceTree = "<group>"; };
@@ -151,72 +92,6 @@ Project object */;
 		FB2A94A428CA9B7900F64DF1 /* BarteringAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarteringAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppUITests.swift; sourceTree = "<group>"; };
 		FB2A94AA28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-
-		9A88224C28DE683C00995674 /* LoginPage.swift */ = {isa = 
-PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-LoginPage.swift; sourceTree = "<group>"; };
-		9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */ = {isa 
-= PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-CreateAccount.swift; sourceTree = "<group>"; };
-		9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */ = {isa 
-= PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-VerifyBusiness.swift; sourceTree = "<group>"; };
-		9AEACCB928D037FA00783F28 /* CompanyPage.swift */ = {isa = 
-PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-CompanyPage.swift; sourceTree = "<group>"; };
-		9AEACCBB28D038BD00783F28 /* BarterInitiated.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-BarterInitiated.swift; sourceTree = "<group>"; };
-		9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-ProgrammingServices.swift; sourceTree = "<group>"; };
-		9ED972C228F719B100CDDE24 /* 
-BarterSpecializedServices.swift */ = {isa = PBXFileReference; 
-lastKnownFileType = sourcecode.swift; path = 
-BarterSpecializedServices.swift; sourceTree = "<group>"; };
-		9ED972C328F719B100CDDE24 /* LaborServices.swift */ = {isa 
-= PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-LaborServices.swift; sourceTree = "<group>"; };
-		9ED972C428F719B100CDDE24 /* FoodServices.swift */ = {isa = 
-PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-FoodServices.swift; sourceTree = "<group>"; };
-		9ED972C528F719B100CDDE24 /* BusinessServices.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-BusinessServices.swift; sourceTree = "<group>"; };
-		9ED972C628F719B100CDDE24 /* MiscServices.swift */ = {isa = 
-PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-MiscServices.swift; sourceTree = "<group>"; };
-		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = 
-PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 
-0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-BarteringAppApp.swift; sourceTree = "<group>"; };
-		FB2A948F28CA9B7800F64DF1 /* ContentView.swift */ = {isa = 
-PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-ContentView.swift; sourceTree = "<group>"; };
-		FB2A949128CA9B7900F64DF1 /* Assets.xcassets */ = {isa = 
-PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 
-Assets.xcassets; sourceTree = "<group>"; };
-		FB2A949A28CA9B7900F64DF1 /* BarteringAppTests.xctest */ = 
-{isa = PBXFileReference; explicitFileType = wrapper.cfbundle; 
-includeInIndex = 0; path = BarteringAppTests.xctest; sourceTree = 
-BUILT_PRODUCTS_DIR; };
-		FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-BarteringAppTests.swift; sourceTree = "<group>"; };
-		FB2A94A428CA9B7900F64DF1 /* BarteringAppUITests.xctest */ 
-= {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; 
-includeInIndex = 0; path = BarteringAppUITests.xctest; sourceTree = 
-BUILT_PRODUCTS_DIR; };
-		FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */ = 
-{isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 
-BarteringAppUITests.swift; sourceTree = "<group>"; };
-		FB2A94AA28CA9B7900F64DF1 /* 
-BarteringAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; 
-lastKnownFileType = sourcecode.swift; path = 
-BarteringAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,12 +124,6 @@ BarteringAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BF591C83291702AA004FF9FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9ED972C628F719B100CDDE24 /* MiscServices.swift */,
-				9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */,
-				9ED972C328F719B100CDDE24 /* LaborServices.swift */,
-				9ED972C428F719B100CDDE24 /* FoodServices.swift */,
-				9ED972C528F719B100CDDE24 /* BusinessServices.swift */,
-				9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,12 +161,9 @@ BarteringAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB2A948128CA9B7800F64DF1 = {
 			isa = PBXGroup;
 			children = (
-				FB2A948C28CA9B7800F64DF1 /* BarteringApp 
-*/,
-				FB2A949D28CA9B7900F64DF1 /* 
-BarteringAppTests */,
-				FB2A94A728CA9B7900F64DF1 /* 
-BarteringAppUITests */,
+				FB2A948C28CA9B7800F64DF1 /* BarteringApp */,
+				FB2A949D28CA9B7900F64DF1 /* BarteringAppTests */,
+				FB2A94A728CA9B7900F64DF1 /* BarteringAppUITests */,
 				FB2A948B28CA9B7800F64DF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -305,12 +171,9 @@ BarteringAppUITests */,
 		FB2A948B28CA9B7800F64DF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB2A948A28CA9B7800F64DF1 /* 
-BarteringApp.app */,
-				FB2A949A28CA9B7900F64DF1 /* 
-BarteringAppTests.xctest */,
-				FB2A94A428CA9B7900F64DF1 /* 
-BarteringAppUITests.xctest */,
+				FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */,
+				FB2A949A28CA9B7900F64DF1 /* BarteringAppTests.xctest */,
+				FB2A94A428CA9B7900F64DF1 /* BarteringAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,10 +181,20 @@ BarteringAppUITests.xctest */,
 		FB2A948C28CA9B7800F64DF1 /* BarteringApp */ = {
 			isa = PBXGroup;
 			children = (
-
-				BF591C932918DBDE004FF9FC /* GoogleService-Info.plist */,
+				9A84CC9F291F095B004528B7 /* GoogleService-Info.plist */,
 				BF591C8429179252004FF9FC /* Messages */,
 				BF591C83291702AA004FF9FC /* Services */,
+				9AE50E1B28F9E8D3004DF1EE /* ChatPage.swift */,
+				9A44D9112904BD4D00BC7389 /* InputOffer.swift */,
+				9ABD6F62290B301600332EFA /* ProfilePage.swift */,
+				9AFB30B428F799ED003FD182 /* DocumentUpload.swift */,
+				BF591C8129148D1C004FF9FC /* Settings.swift */,
+				9ED972C228F719B100CDDE24 /* BarterSpecializedServices.swift */,
+				9ED972C528F719B100CDDE24 /* BusinessServices.swift */,
+				9ED972C428F719B100CDDE24 /* FoodServices.swift */,
+				9ED972C328F719B100CDDE24 /* LaborServices.swift */,
+				9ED972C628F719B100CDDE24 /* MiscServices.swift */,
+				9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */,
 				FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */,
 				FB2A948F28CA9B7800F64DF1 /* ContentView.swift */,
 				FB2A949128CA9B7900F64DF1 /* Assets.xcassets */,
@@ -331,42 +204,6 @@ BarteringAppUITests.xctest */,
 				9A88224C28DE683C00995674 /* LoginPage.swift */,
 				9A9C4B1128E527CC00C05EB5 /* CreateAccount.swift */,
 				9A9C4B1328E52D8800C05EB5 /* VerifyBusiness.swift */,
-				9AE50E1B28F9E8D3004DF1EE /* ChatPage.swift */,
-				9A44D9112904BD4D00BC7389 /* InputOffer.swift */,
-				9ABD6F62290B301600332EFA /* ProfilePage.swift */,
-				9AFB30B428F799ED003FD182 /* DocumentUpload.swift */,
-				BF591C8129148D1C004FF9FC /* Settings.swift */,
-
-				9ED972C228F719B100CDDE24 /* 
-BarterSpecializedServices.swift */,
-				9ED972C528F719B100CDDE24 /* 
-BusinessServices.swift */,
-				9ED972C428F719B100CDDE24 /* 
-FoodServices.swift */,
-				9ED972C328F719B100CDDE24 /* 
-LaborServices.swift */,
-				9ED972C628F719B100CDDE24 /* 
-MiscServices.swift */,
-				9ED972C128F719B100CDDE24 /* 
-ProgrammingServices.swift */,
-				FB2A948D28CA9B7800F64DF1 /* 
-BarteringAppApp.swift */,
-				FB2A948F28CA9B7800F64DF1 /* 
-ContentView.swift */,
-				FB2A949128CA9B7900F64DF1 /* 
-Assets.xcassets */,
-				FB2A949328CA9B7900F64DF1 /* Preview 
-Content */,
-				9AEACCB928D037FA00783F28 /* 
-CompanyPage.swift */,
-				9AEACCBB28D038BD00783F28 /* 
-BarterInitiated.swift */,
-				9A88224C28DE683C00995674 /* 
-LoginPage.swift */,
-				9A9C4B1128E527CC00C05EB5 /* 
-CreateAccount.swift */,
-				9A9C4B1328E52D8800C05EB5 /* 
-VerifyBusiness.swift */,
 			);
 			path = BarteringApp;
 			sourceTree = "<group>";
@@ -381,8 +218,7 @@ VerifyBusiness.swift */,
 		FB2A949D28CA9B7900F64DF1 /* BarteringAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB2A949E28CA9B7900F64DF1 /* 
-BarteringAppTests.swift */,
+				FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */,
 			);
 			path = BarteringAppTests;
 			sourceTree = "<group>";
@@ -390,10 +226,8 @@ BarteringAppTests.swift */,
 		FB2A94A728CA9B7900F64DF1 /* BarteringAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FB2A94A828CA9B7900F64DF1 /* 
-BarteringAppUITests.swift */,
-				FB2A94AA28CA9B7900F64DF1 /* 
-BarteringAppUITestsLaunchTests.swift */,
+				FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */,
+				FB2A94AA28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift */,
 			);
 			path = BarteringAppUITests;
 			sourceTree = "<group>";
@@ -403,8 +237,7 @@ BarteringAppUITestsLaunchTests.swift */,
 /* Begin PBXNativeTarget section */
 		FB2A948928CA9B7800F64DF1 /* BarteringApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB2A94AE28CA9B7900F64DF1 
-/* Build configuration list for PBXNativeTarget "BarteringApp" */;
+			buildConfigurationList = FB2A94AE28CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringApp" */;
 			buildPhases = (
 				FB2A948628CA9B7800F64DF1 /* Sources */,
 				FB2A948728CA9B7800F64DF1 /* Frameworks */,
@@ -420,15 +253,12 @@ BarteringAppUITestsLaunchTests.swift */,
 				BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */,
 			);
 			productName = BarteringApp;
-			productReference = FB2A948A28CA9B7800F64DF1 /* 
-BarteringApp.app */;
-			productType = 
-"com.apple.product-type.application";
+			productReference = FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 		FB2A949928CA9B7900F64DF1 /* BarteringAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB2A94B128CA9B7900F64DF1 
-/* Build configuration list for PBXNativeTarget "BarteringAppTests" */;
+			buildConfigurationList = FB2A94B128CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringAppTests" */;
 			buildPhases = (
 				FB2A949628CA9B7900F64DF1 /* Sources */,
 				FB2A949728CA9B7900F64DF1 /* Frameworks */,
@@ -437,20 +267,16 @@ BarteringApp.app */;
 			buildRules = (
 			);
 			dependencies = (
-				FB2A949C28CA9B7900F64DF1 /* 
-PBXTargetDependency */,
+				FB2A949C28CA9B7900F64DF1 /* PBXTargetDependency */,
 			);
 			name = BarteringAppTests;
 			productName = BarteringAppTests;
-			productReference = FB2A949A28CA9B7900F64DF1 /* 
-BarteringAppTests.xctest */;
-			productType = 
-"com.apple.product-type.bundle.unit-test";
+			productReference = FB2A949A28CA9B7900F64DF1 /* BarteringAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FB2A94A328CA9B7900F64DF1 /* BarteringAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB2A94B428CA9B7900F64DF1 
-/* Build configuration list for PBXNativeTarget "BarteringAppUITests" */;
+			buildConfigurationList = FB2A94B428CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringAppUITests" */;
 			buildPhases = (
 				FB2A94A028CA9B7900F64DF1 /* Sources */,
 				FB2A94A128CA9B7900F64DF1 /* Frameworks */,
@@ -459,15 +285,12 @@ BarteringAppTests.xctest */;
 			buildRules = (
 			);
 			dependencies = (
-				FB2A94A628CA9B7900F64DF1 /* 
-PBXTargetDependency */,
+				FB2A94A628CA9B7900F64DF1 /* PBXTargetDependency */,
 			);
 			name = BarteringAppUITests;
 			productName = BarteringAppUITests;
-			productReference = FB2A94A428CA9B7900F64DF1 /* 
-BarteringAppUITests.xctest */;
-			productType = 
-"com.apple.product-type.bundle.ui-testing";
+			productReference = FB2A94A428CA9B7900F64DF1 /* BarteringAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -480,25 +303,19 @@ BarteringAppUITests.xctest */;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					FB2A948928CA9B7800F64DF1 = {
-						CreatedOnToolsVersion = 
-13.4.1;
+						CreatedOnToolsVersion = 13.4.1;
 					};
 					FB2A949928CA9B7900F64DF1 = {
-						CreatedOnToolsVersion = 
-13.4.1;
-						TestTargetID = 
-FB2A948928CA9B7800F64DF1;
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FB2A948928CA9B7800F64DF1;
 					};
 					FB2A94A328CA9B7900F64DF1 = {
-						CreatedOnToolsVersion = 
-13.4.1;
-						TestTargetID = 
-FB2A948928CA9B7800F64DF1;
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FB2A948928CA9B7800F64DF1;
 					};
 				};
 			};
-			buildConfigurationList = FB2A948528CA9B7800F64DF1 
-/* Build configuration list for PBXProject "BarteringApp" */;
+			buildConfigurationList = FB2A948528CA9B7800F64DF1 /* Build configuration list for PBXProject "BarteringApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -514,12 +331,9 @@ FB2A948928CA9B7800F64DF1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB2A948928CA9B7800F64DF1 /* BarteringApp 
-*/,
-				FB2A949928CA9B7900F64DF1 /* 
-BarteringAppTests */,
-				FB2A94A328CA9B7900F64DF1 /* 
-BarteringAppUITests */,
+				FB2A948928CA9B7800F64DF1 /* BarteringApp */,
+				FB2A949928CA9B7900F64DF1 /* BarteringAppTests */,
+				FB2A94A328CA9B7900F64DF1 /* BarteringAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -530,7 +344,7 @@ BarteringAppUITests */,
 			buildActionMask = 2147483647;
 			files = (
 				FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */,
-				BF591C942918DBDE004FF9FC /* GoogleService-Info.plist in Resources */,
+				9A84CCA0291F095C004528B7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,8 +401,7 @@ BarteringAppUITests */,
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2A949F28CA9B7900F64DF1 /* 
-BarteringAppTests.swift in Sources */,
+				FB2A949F28CA9B7900F64DF1 /* BarteringAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,10 +409,8 @@ BarteringAppTests.swift in Sources */,
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2A94A928CA9B7900F64DF1 /* 
-BarteringAppUITests.swift in Sources */,
-				FB2A94AB28CA9B7900F64DF1 /* 
-BarteringAppUITestsLaunchTests.swift in Sources */,
+				FB2A94A928CA9B7900F64DF1 /* BarteringAppUITests.swift in Sources */,
+				FB2A94AB28CA9B7900F64DF1 /* BarteringAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,17 +419,13 @@ BarteringAppUITestsLaunchTests.swift in Sources */,
 /* Begin PBXTargetDependency section */
 		FB2A949C28CA9B7900F64DF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB2A948928CA9B7800F64DF1 /* BarteringApp 
-*/;
-			targetProxy = FB2A949B28CA9B7900F64DF1 /* 
-PBXContainerItemProxy */;
+			target = FB2A948928CA9B7800F64DF1 /* BarteringApp */;
+			targetProxy = FB2A949B28CA9B7900F64DF1 /* PBXContainerItemProxy */;
 		};
 		FB2A94A628CA9B7900F64DF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB2A948928CA9B7800F64DF1 /* BarteringApp 
-*/;
-			targetProxy = FB2A94A528CA9B7900F64DF1 /* 
-PBXContainerItemProxy */;
+			target = FB2A948928CA9B7800F64DF1 /* BarteringApp */;
+			targetProxy = FB2A94A528CA9B7900F64DF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -628,39 +435,31 @@ PBXContainerItemProxy */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = 
-YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = 
-YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS 
-= YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = 
-YES_ERROR;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = 
-YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = 
-YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				
-CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = 
-YES_AGGRESSIVE;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -678,8 +477,7 @@ YES_AGGRESSIVE;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = 
-YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -687,8 +485,7 @@ YES_AGGRESSIVE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = 
-DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -698,44 +495,35 @@ DEBUG;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = 
-YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = 
-YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS 
-= YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = 
-YES_ERROR;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = 
-YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = 
-YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				
-CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = 
-YES_AGGRESSIVE;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = 
-"dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -743,8 +531,7 @@ YES_AGGRESSIVE;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = 
-YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -760,38 +547,25 @@ YES_AGGRESSIVE;
 		FB2A94AF28CA9B7900F64DF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = 
-AppIcon;
-				
-ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = 
-"\"BarteringApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BarteringApp/Preview Content\"";
 				DEVELOPMENT_TEAM = A93P32RDMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				
-INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				
-INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = 
-YES;
-				
-INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = 
-"UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown 
-UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				
-INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = 
-"UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft 
-UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown \nUIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft \nUIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringApp;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -802,38 +576,25 @@ placeholder.BarteringApp;
 		FB2A94B028CA9B7900F64DF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = 
-AppIcon;
-				
-ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = 
-"\"BarteringApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BarteringApp/Preview Content\"";
 				DEVELOPMENT_TEAM = A93P32RDMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				
-INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				
-INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = 
-YES;
-				
-INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = 
-"UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown 
-UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				
-INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = 
-"UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft 
-UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown \nUIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft \nUIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringApp;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -844,8 +605,7 @@ placeholder.BarteringApp;
 		FB2A94B228CA9B7900F64DF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 
-YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -853,22 +613,19 @@ YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = 
-"$(BUILT_PRODUCTS_DIR)/BarteringApp.app/BarteringApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarteringApp.app/BarteringApp";
 			};
 			name = Debug;
 		};
 		FB2A94B328CA9B7900F64DF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 
-YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -876,29 +633,25 @@ YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = 
-"$(BUILT_PRODUCTS_DIR)/BarteringApp.app/BarteringApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarteringApp.app/BarteringApp";
 			};
 			name = Release;
 		};
 		FB2A94B528CA9B7900F64DF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 
-YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A93P32RDMK;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -910,15 +663,13 @@ placeholder.BarteringAppUITests;
 		FB2A94B628CA9B7900F64DF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 
-YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A93P32RDMK;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = 
-placeholder.BarteringAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.BarteringAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -930,8 +681,7 @@ placeholder.BarteringAppUITests;
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB2A948528CA9B7800F64DF1 /* Build configuration list for 
-PBXProject "BarteringApp" */ = {
+		FB2A948528CA9B7800F64DF1 /* Build configuration list for PBXProject "BarteringApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB2A94AC28CA9B7900F64DF1 /* Debug */,
@@ -940,8 +690,7 @@ PBXProject "BarteringApp" */ = {
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB2A94AE28CA9B7900F64DF1 /* Build configuration list for 
-PBXNativeTarget "BarteringApp" */ = {
+		FB2A94AE28CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB2A94AF28CA9B7900F64DF1 /* Debug */,
@@ -950,8 +699,7 @@ PBXNativeTarget "BarteringApp" */ = {
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB2A94B128CA9B7900F64DF1 /* Build configuration list for 
-PBXNativeTarget "BarteringAppTests" */ = {
+		FB2A94B128CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB2A94B228CA9B7900F64DF1 /* Debug */,
@@ -960,8 +708,7 @@ PBXNativeTarget "BarteringAppTests" */ = {
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB2A94B428CA9B7900F64DF1 /* Build configuration list for 
-PBXNativeTarget "BarteringAppUITests" */ = {
+		FB2A94B428CA9B7900F64DF1 /* Build configuration list for PBXNativeTarget "BarteringAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB2A94B528CA9B7900F64DF1 /* Debug */,
