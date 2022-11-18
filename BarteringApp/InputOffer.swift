@@ -9,144 +9,109 @@ import SwiftUI
 
 
 struct InputOffer: View {
-    @State var username: String = ""
-    @State var emailAddress: String = ""
-    @State var password: String = ""
-    @State var passwordConfirm: String = ""
+    @State var offer: String = ""
+    @State var bucks: String = "0"
     var body: some View {
-        VStack {
-            Group{
-                Text("Make a Offer").font(.largeTitle.bold())
-                
-            }
-            Spacer()
-            Group{
-                HStack{
-                    Image("Phoebe")
-                                .resizable()
-                                .frame(width:100, height: 100)
-                                .clipShape(Circle())
-                                .shadow(radius: 10)
-                                .overlay(Circle().stroke(Color.black, lineWidth: 1))
-                    Spacer()
-                    Image("business2")
-                                .resizable()
-                                .frame(width:120, height: 100)
-                                .shadow(radius: 10)
-                    Spacer()
-                    Image("Andrew")
-                                .resizable()
-                                .frame(width:100, height: 100)
-                                .clipShape(Circle())
-                                .shadow(radius: 10)
-                                .overlay(Circle().stroke(Color.black, lineWidth: 1))
+        NavigationView{
+            VStack {
+                Group{
+                    Text("Make Your Offer").font(.largeTitle.bold())
+                    
                 }
                 Spacer()
-                HStack{
-                    VStack{
-                        HStack {
-                            Image(systemName: "arrow.up.right.square").foregroundColor(Color.black)
-                            VStack {
-                                TextField("Offering two bagels for 1 big dog", text: $emailAddress)
-                                    .foregroundColor(Color.black)
-                                    .textFieldStyle(.roundedBorder)
-                                    .font(.title2)
-                                    
-                                
-                                 
-                            }
-                        }
+                Group{
+                    HStack{
+                        Image("Phoebe")
+                            .resizable()
+                            .frame(width:100, height: 100)
+                            .clipShape(Circle())
+                            .shadow(radius: 10)
+                            .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                        Spacer()
+                        Image("business2")
+                            .resizable()
+                            .frame(width:120, height: 100)
+                            .shadow(radius: 10)
+                        Spacer()
+                        Image("Andrew")
+                            .resizable()
+                            .frame(width:100, height: 100)
+                            .clipShape(Circle())
+                            .shadow(radius: 10)
+                            .overlay(Circle().stroke(Color.black, lineWidth: 1))
                     }
                     Spacer()
-                    VStack{
-                        HStack {
-                            Image(systemName: "arrow.down.left.square").foregroundColor(Color.black)
-                            VStack {
-                                TextField("Receiving", text: $emailAddress).textFieldStyle(.roundedBorder).font(.title2)
+                    HStack{
+                        VStack{
+                            HStack {
+                                Image(systemName: "arrow.up.right.square").foregroundColor(Color.black)
                                 
-                            }
-                            
-                        }
-                    }
-                }
-                Spacer()
-                HStack{
-                    VStack{
-                        HStack {
-                            Image("BarterBuck")
-                                        .resizable()
-                                        .frame(width:60, height: 60)
-                                        .clipShape(Circle())
-                                        .shadow(radius: 10)
-                            VStack {
-                                Menu("0") {
-                                    Button("0", action: {print("pressed")})
-                                    Button("1", action: {print("pressed")})
-                                    Button("2", action: {print("pressed")})
-                                    Button("3", action: {print("pressed")})
-                                    Button("4", action: {print("pressed")})
-                                    Button("5", action: {print("pressed")})
-                                    Button("6", action: {print("pressed")})
-                                    Button("7", action: {print("pressed")})
-                                    Button("8", action: {print("pressed")})
-                                    Button("9", action: {print("pressed")})
+                                VStack {
+                                    TextField("Your Offer", text: $offer)
+                                        .foregroundColor(Color.black)
+                                        .textFieldStyle(.roundedBorder)
+                                        .font(.largeTitle)
                                     
                                 }
-                                .font(.largeTitle)
-                                .shadow(radius: 10)
-
-
                             }
                         }
-                    }.padding(20)
-                    
-                    VStack{
-                        HStack {
-                            Image("BarterBuck")
-                                        .resizable()
-                                        .frame(width:60, height: 60)
-                                        .clipShape(Circle())
-                                        .shadow(radius: 10)
-                            VStack {
-                                Menu("0") {
-                                    Button("0", action: {print("pressed")})
-                                    Button("1", action: {print("pressed")})
-                                    Button("2", action: {print("pressed")})
-                                    Button("3", action: {print("pressed")})
-                                    Button("4", action: {print("pressed")})
-                                    Button("5", action: {print("pressed")})
-                                    Button("6", action: {print("pressed")})
-                                    Button("7", action: {print("pressed")})
-                                    Button("8", action: {print("pressed")})
-                                    Button("9", action: {print("pressed")})
+                    }
+                    Spacer()
+                    HStack{
+                        VStack{
+                            HStack {
+                                Image("BarterBuck")
+                                    .resizable()
+                                    .frame(width:60, height: 60)
+                                    .clipShape(Circle())
+                                    .shadow(radius: 10)
+                                VStack {
+                                    Menu(bucks) {
+                                        Button("0", action: {self.bucks = "0"})
+                                        Button("1", action: {self.bucks = "1"})
+                                        Button("2", action: {self.bucks = "2"})
+                                        Button("3", action: {self.bucks = "3"})
+                                        Button("4", action: {self.bucks = "4"})
+                                        Button("5", action: {self.bucks = "5"})
+                                        Button("6", action: {self.bucks = "6"})
+                                        Button("7", action: {self.bucks = "7"})
+                                        Button("8", action: {self.bucks = "8"})
+                                        Button("9", action: {self.bucks = "9"})
+                                        
+                                    }
+                                    .font(.largeTitle)
+                                    .shadow(radius: 10)
                                     
-                                        }.font(.largeTitle)
-
-                                
+                                    
+                                }
                             }
                         }
-                    }.padding(20)
+                        
+                    }
+                    
                 }
+                Spacer()
                 
-            }
-            Spacer()
-            NavigationLink(destination: BarterInitiated()) {
-                RoundedRectangle(cornerRadius: 20)
-                            .fill(Color("CremeBrulee"))
-                            .overlay(Text("Initiate Barter")).foregroundColor(Color.black)
-                            .frame(width: 190, height: 50, alignment: .trailing)
-            }
-            .padding(20)
-            .shadow(radius: 10)
-
-            
-            
-        }.padding(15)
+                NavigationLink(destination: BarterInitiated2().navigationBarBackButtonHidden(true)) {
+                    Text("Confirm your offer")
+                        .font(Font.custom("Nunito", size: 17))
+                }
+                .frame(maxWidth: 230, minHeight: 25)
+                .padding(10)
+                .foregroundColor(Color.black)
+                .background(Color("CremeBrulee"))
+                .cornerRadius(20)
+                Spacer()
+                
+                
+                
+            }.padding(15)
+        }
     }
-}
-
-struct InputOffer_Previews: PreviewProvider {
-    static var previews: some View {
-        InputOffer()
+    
+    struct InputOffer_Previews: PreviewProvider {
+        static var previews: some View {
+            InputOffer()
+        }
     }
 }

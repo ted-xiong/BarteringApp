@@ -28,12 +28,12 @@ struct CompanyPage: View {
                     .onTapGesture {
                         print("Show details for user")
                     }
-                    Text("The Restoration Station").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
+                    Text("Sooner Greenery").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
                 }
             }
             VStack  (alignment: .leading) {
                     VStack {
-                        Text("The Restoration Station is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
+                        Text("Sooner Greenery is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
                             .font(.caption)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(5)
