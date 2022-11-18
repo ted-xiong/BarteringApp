@@ -28,13 +28,13 @@ struct CompanyPage: View {
                     .onTapGesture {
                         print("Show details for user")
                     }
-                    Text("Squeaky Cleanz").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
+                    Text("The Restoration Station").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
                 }
             }
             VStack  (alignment: .leading) {
                 HStack {
                     VStack {
-                        Text("Squeaky Cleanz is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
+                        Text("Welcome to The Restoration Station! We look forward to bartering with you.")
                             .font(.caption)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(2)
@@ -45,7 +45,7 @@ struct CompanyPage: View {
                     Image(systemName: "building.2")
                     VStack (alignment: .leading) {
                         Text("Age of Company").font(.caption)
-                        Text("5 Years").font(.body.bold())
+                        Text("31 Years").font(.body.bold())
                     }
                 }.padding(2)
                 Divider()

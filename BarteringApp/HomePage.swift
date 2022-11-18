@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SecondContentView: View {
    var body: some View {
-      LaborServices()
+       BarterSpecializedServices()
    }
 }
 struct FoodView: View {
@@ -34,6 +34,11 @@ struct ProgrammingView: View {
    }
 }
 
+struct PhysicalView: View {
+   var body: some View {
+       LaborServices()
+   }
+}
 
 
 
@@ -78,7 +83,7 @@ struct Home: View{
                                 .shadow(color: .white, radius: 10).cornerRadius(30)
                         }
                         
-                        NavigationLink(destination: SecondContentView()) {
+                        NavigationLink(destination: LaborServices()) {
                             Image("PhysServ")
                                 .resizable()
                                 .frame(width: 180, height: 220)
