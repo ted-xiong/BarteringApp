@@ -28,18 +28,16 @@ struct CompanyPage: View {
                     .onTapGesture {
                         print("Show details for user")
                     }
-                    Text("Squeaky Cleanz").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
+                    Text("The Restoration Station").font(.headline.bold()).padding().fixedSize(horizontal: false, vertical: true)
                 }
             }
             VStack  (alignment: .leading) {
-                HStack {
                     VStack {
-                        Text("Squeaky Cleanz is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
+                        Text("The Restoration Station is a window cleaning service which will surely leave your customers admiring their own reflection! We promise a mirror like finish and a smile at the end of the day!")
                             .font(.caption)
                             .fixedSize(horizontal: false, vertical: true)
-                            .padding(2)
+                            .padding(5)
                     }
-                }
                 Divider()
                 HStack {
                     Image(systemName: "building.2")
@@ -47,7 +45,7 @@ struct CompanyPage: View {
                         Text("Age of Company").font(.caption)
                         Text("5 Years").font(.body.bold())
                     }
-                }.padding(2)
+                }.padding(5)
                 Divider()
                 HStack {
                     Image(systemName: "building.2")
@@ -55,7 +53,7 @@ struct CompanyPage: View {
                         Text("Age of Barter Shop").font(.caption)
                         Text("5 Years").font(.body.bold())
                     }
-                }.padding(2)
+                }.padding(5)
                 Divider()
                 HStack {
                     Image(systemName: "map")
@@ -63,15 +61,15 @@ struct CompanyPage: View {
                         Text("From").font(.caption)
                         Text("1904 W. Cornelia Ave").font(.body.bold())
                     }
-                }.padding(2)
+                }.padding(5)
                 Divider()
                 HStack {
                     Image(systemName: "clock")
                     VStack (alignment: .leading){
                         Text("Business Hours").font(.caption)
                         Text("8am - 9pm").font(.body.bold())
-                    }.padding(2)
-                }.padding(2)
+                    }.padding(5)
+                }.padding(5)
                 HStack {
                     Spacer()
                 Button (action: {print("whatever")}) {
@@ -81,7 +79,7 @@ struct CompanyPage: View {
                 }
                 .padding(10)
                 .foregroundColor(Color.black)
-                .background(Color("CremeBrulee"))
+                .background(Color("cremeBrulee"))
                 .cornerRadius(10)
                     Spacer()
                 }
@@ -109,16 +107,8 @@ struct CompanyPage: View {
                                     .overlay(Text("Chat Now")).foregroundColor(Color.white)
                                     .frame(width: 100, height: 50, alignment: .trailing)
                                     }
-//                Button (action: {print("whatever")}) {
-//                    Text("Chat Now")
-//                        .font(Font.custom("Nunito", size: 20))
-//                        .padding(15)
-//                        .foregroundColor(Color.white)
-//                        .background(Color("Turquoise"))
-//                        .cornerRadius(10)
-//                }
                 }.padding()
-            }
+            }.padding(.top, 100)
         }.navigationTitle("")
         .navigationBarHidden(true)
     }

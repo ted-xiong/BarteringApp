@@ -10,7 +10,6 @@ import Firebase
 
 @main
 struct BarteringAppApp: App {
-    
     init() {
         FirebaseApp.configure()
     }

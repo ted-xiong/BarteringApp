@@ -50,7 +50,7 @@ struct LoginPage: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
 
                 .foregroundColor(Color("turquoise")).font(.callout.bold())
-                NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: Create_Account().navigationBarBackButtonHidden(true)) {
                     //COME BACK AND CHANGE THIS LATER!!!!
                 Text("Login")
                     .font(Font.custom("Nunito", size: 17))

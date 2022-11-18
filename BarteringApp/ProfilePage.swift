@@ -16,10 +16,11 @@ struct ProfilePage: View {
                 .fill(Color("Bread"))
                 VStack {
                     HStack {
-                        Image("Coin").resizable().frame(width: 25, height: 25, alignment: .leading).clipShape(Circle()).padding()
+                        Image("Coin").resizable().frame(width: 30, height: 30, alignment: .leading).clipShape(Circle()).padding(.leading)
+                        Text("20").foregroundColor(Color.orange).bold()
                         Spacer()
                         NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
-                        Image("Setting").resizable().frame(width: 25, height: 25, alignment: .trailing).padding()
+                        Image("Setting").resizable().frame(width: 30, height: 30, alignment: .trailing).padding()
                         }
                     }
             Image("Lady")
@@ -29,8 +30,9 @@ struct ProfilePage: View {
                 .shadow(color: .white, radius: 10)
                 .overlay(Circle()
                 .stroke(Color.yellow, lineWidth: 6))
-                    
+                
                     HStack {
+                        Image(systemName: "checkmark.seal.fill")
                         Text("Kho Fee").font(.title2.bold())
             Image(systemName: "pencil")
                     }
@@ -69,7 +71,7 @@ struct ProfilePage: View {
                                 .frame(width: 111, height: 89)
                             VStack {
                                 Text("Documents").foregroundColor(Color.gray).font(.body.bold())
-                                Image(systemName: "filemenu.and.selection").foregroundColor(Color.gray)
+                                Image(systemName: "newspaper").foregroundColor(Color.gray)
                             }
                         }
                         ZStack{
@@ -78,8 +80,8 @@ struct ProfilePage: View {
                                 .foregroundColor(Color.gray)
                                 .frame(width: 111, height: 89)
                             VStack {
-                                Text("Documents").foregroundColor(Color.gray).font(.body.bold())
-                                Image(systemName: "filemenu.and.selection").foregroundColor(Color.gray)
+                                Text("Degrees").foregroundColor(Color.gray).font(.body.bold())
+                                Image(systemName: "graduationcap").foregroundColor(Color.gray)
                             }
                         }
                         ZStack {
@@ -88,12 +90,25 @@ struct ProfilePage: View {
                                         .foregroundColor(Color.gray)
                                         .frame(width: 111, height: 89)
                                     VStack {
-                                        Text("Documents").foregroundColor(Color.gray).font(.body.bold())
-                                        Image(systemName: "filemenu.and.selection").foregroundColor(Color.gray)
+                                        Text("Licenses").foregroundColor(Color.gray).font(.body.bold())
+                                        Image(systemName: "paperclip").foregroundColor(Color.gray)
                                     }
                                 }
                     }.padding()
                     Divider()
+                    VStack (alignment: .leading) {
+                        Text("Upload Videos").font(.body.bold()).frame(maxWidth: .infinity, alignment: .topLeading).padding()
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                        .stroke(style: StrokeStyle(lineWidth: 2, dash: [5]))
+                                        .foregroundColor(Color.gray)
+                                        .frame(width: 111, height: 89)
+                                    VStack {
+                                        Text("Profile Video").foregroundColor(Color.gray).font(.body.bold())
+                                        Image(systemName: "video.badge.plus").foregroundColor(Color.gray)
+                                    }
+                        }.padding(.leading)
+                    }
                     Spacer()
                     
                 }
