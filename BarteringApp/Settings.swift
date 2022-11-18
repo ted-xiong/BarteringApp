@@ -26,7 +26,7 @@ struct Settings: View {
             
             VStack{
                 HStack {
-                    NavigationLink(destination: ProfilePage()) {
+                    NavigationLink(destination: ProfilePage().navigationBarBackButtonHidden(true)) {
                         Image(systemName: "chevron.left")
                     }
                     Text("Settings").font(.title).bold()

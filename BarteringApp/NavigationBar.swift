@@ -18,7 +18,6 @@ struct HomeView: View {
     var body: some View{
         NavigationView{
             ZStack{
-                
                 Color.white
                 HomePage()
             }
@@ -49,21 +48,26 @@ struct ExploreView: View {
         }
     }
 
-struct MapView: View {
+struct InfoView: View {
     var body: some View{
         NavigationView{
             ZStack{
                 Color.white
+                Link(destination: URL(string: "https://www.canva.com/design/DAFRhlUgUm8/pWJM_4ukbBsVDbuY4HyXRQ/view?utm_content=DAFRhlUgUm8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink")!) {
+                    Image(systemName: "person.fill.questionmark")
+                }
             }
-            .navigationTitle("Map")
+            .navigationTitle("Help")
         }
     }
 }
+
 struct BarterView: View {
     var body: some View{
         NavigationView{
                 ZStack{
                     Color.white
+                    //here
                 }
                 .navigationTitle("Barterers Near You")
         }
@@ -74,8 +78,9 @@ struct ProfileView: View {
         NavigationView{
             ZStack{
                 Color.white
+                ProfilePage()
             }
-            .navigationTitle("Profile")
+            .navigationTitle("")
         }
     }
 }
@@ -89,10 +94,6 @@ struct NavigationBar: View {
                 Image(systemName: "globe.europe.africa.fill")
                 Text("Explore")
             }
-            MapView().tabItem{
-                Image(systemName: "map.fill")
-                Text("Map")
-            }
             HomeView().tabItem{
                 Image(systemName: "magnifyingglass.circle.fill")
                 Text("Search")
@@ -105,8 +106,15 @@ struct NavigationBar: View {
                 Image(systemName: "person.fill")
                 Text("Profile")
             }
+            
+            InfoView().tabItem{
+                NavigationView{
+                        Image(systemName: "person.fill.questionmark")
+                            .font(.largeTitle)
+                        Text("Help")
+                }
+            }
         }
-      
     }
 }
 

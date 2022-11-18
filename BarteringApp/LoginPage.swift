@@ -50,7 +50,7 @@ struct LoginPage: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
 
                 .foregroundColor(Color("turquoise")).font(.callout.bold())
-                NavigationLink(destination: Settings().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: NavigationBar().navigationBarBackButtonHidden(true)) {
                     //COME BACK AND CHANGE THIS LATER!!!!
                 Text("Login")
                     .font(Font.custom("Nunito", size: 17))
@@ -68,7 +68,7 @@ struct LoginPage: View {
                     }
             HStack {
                 Button (action: {print("whatever")}) {
-                    Image("Tiktok")
+                    Image("tiktok")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .padding(10)
@@ -76,7 +76,7 @@ struct LoginPage: View {
                         .cornerRadius(10)
                 }
                 Button (action: {print("whatever")}) {
-                    Image("Twitter")
+                    Image("twitter")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .padding(10)

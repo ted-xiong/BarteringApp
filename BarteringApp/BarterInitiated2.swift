@@ -33,12 +33,12 @@ struct BarterInitiated2: View {
                 ZStack{
                     Color("Bread").ignoresSafeArea()
                     VStack{
-                        Text("You've initiated a barter!").padding().foregroundColor(Color("Turquoise"))
+                        Text("You've initiated a barter!").padding().foregroundColor(Color("turquoise"))
                             .font(.title)
                         Spacer()
                         HStack{
                             ZStack{
-                                Rectangle().fill(Color("Turquoise")).frame(width: 130, height: 90, alignment: .center).cornerRadius(30, corners: [.topRight, .bottomRight])
+                                Rectangle().fill(Color("turquoise")).frame(width: 130, height: 90, alignment: .center).cornerRadius(30, corners: [.topRight, .bottomRight])
                                 Image("Phoebe")
                                     .resizable()
                                     .frame(width: 70, height: 70)
@@ -70,7 +70,7 @@ struct BarterInitiated2: View {
                             .frame(width: 90, height: 90)
                         
                         ZStack{
-                            Circle().fill(Color("Turquoise")).frame(width: 35, height: 35)
+                            Circle().fill(Color("turquoise")).frame(width: 35, height: 35)
                             Image(systemName: "cup.and.saucer")
                         }
                         Spacer()
@@ -82,19 +82,19 @@ struct BarterInitiated2: View {
                 Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .strokeBorder(Color("Turquoise"), lineWidth: 1)
+                        .strokeBorder(Color("turquoise"), lineWidth: 1)
                         .background(RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color.white))
                         .frame(width: 370, height: 90)
                     HStack{
                         VStack{
-                            Text("Offering").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                            Text("Offering").font(.system(size:11)).foregroundColor(Color("turquoise"))
                             Text("Catering").font(.system(size:12))
                         }
                         Spacer()
                         Divider()
                         Spacer()
                         VStack{
-                            Text("For").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                            Text("For").font(.system(size:11)).foregroundColor(Color("turquoise"))
                             
                             Text("Window Cleaning").font(.system(size:12))
                         }
@@ -102,7 +102,7 @@ struct BarterInitiated2: View {
                         Divider()
                         Spacer()
                         VStack{
-                            Text("When").font(.system(size:11)).foregroundColor(Color("Turquoise"))
+                            Text("When").font(.system(size:11)).foregroundColor(Color("turquoise"))
                             Text("Fridays, 12pm").font(.system(size:12))
                         }
                     }.frame(width: 270, height: 60)
@@ -113,7 +113,7 @@ struct BarterInitiated2: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    NavigationLink(destination: ChatPage().navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: MessageView().navigationBarBackButtonHidden(true)) {
                         Text("Deny")
                             .font(Font.custom("Nunito", size: 17))
                     }
@@ -123,7 +123,7 @@ struct BarterInitiated2: View {
                     .background(Color(.systemRed))
                     .cornerRadius(20)
                     Spacer()
-                    NavigationLink(destination: InputOffer().navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: NavigationBar().navigationBarBackButtonHidden(true)) {
                         Text("Accept")
                             .font(Font.custom("Nunito", size: 17))
                     }.frame(maxWidth: .infinity, minHeight: 25)

@@ -46,7 +46,7 @@ struct ProfilePage: View {
                     HStack {
                         VStack {
                         Text("Business Name").font(.system(size: 12)).foregroundColor(Color.gray)
-                        Text("Sooner Cafe").font(.body.bold())
+                        Text("The Restoration Station").font(.body.bold())
                         }
                         Divider().frame(height: 40)
                         VStack {

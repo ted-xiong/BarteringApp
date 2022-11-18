@@ -103,7 +103,7 @@ struct CompanyPage: View {
                         }
                     }
                     Spacer()
-                    NavigationLink(destination: MessageView()) {
+                    NavigationLink(destination: MessageView().navigationBarBackButtonHidden(true)) {
                         RoundedRectangle(cornerRadius: 10)
                                     .fill(Color("turquoise"))
                                     .overlay(Text("Chat Now")).foregroundColor(Color.white)
