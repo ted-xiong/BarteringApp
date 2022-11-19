@@ -39,8 +39,6 @@
 		BF591C972918DE3D004FF9FC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C962918DE3D004FF9FC /* FirebaseFirestore */; };
 		BF591C992918DE3D004FF9FC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF591C982918DE3D004FF9FC /* FirebaseFirestoreSwift */; };
 		BF591C9B29196A06004FF9FC /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591C9A29196A06004FF9FC /* MessagesManager.swift */; };
-		FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */; };
-		FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A948F28CA9B7800F64DF1 /* ContentView.swift */; };
 		FB2A949228CA9B7900F64DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A949128CA9B7900F64DF1 /* Assets.xcassets */; };
 		FB2A949F28CA9B7900F64DF1 /* BarteringAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */; };
 		FB2A94A928CA9B7900F64DF1 /* BarteringAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94A828CA9B7900F64DF1 /* BarteringAppUITests.swift */; };
@@ -98,8 +96,6 @@
 		BF591C912918CE26004FF9FC /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		BF591C9A29196A06004FF9FC /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		FB2A948A28CA9B7800F64DF1 /* BarteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppApp.swift; sourceTree = "<group>"; };
-		FB2A948F28CA9B7800F64DF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB2A949128CA9B7900F64DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2A949A28CA9B7900F64DF1 /* BarteringAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarteringAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2A949E28CA9B7900F64DF1 /* BarteringAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarteringAppTests.swift; sourceTree = "<group>"; };
@@ -216,8 +212,6 @@
 				9ED972C328F719B100CDDE24 /* LaborServices.swift */,
 				9ED972C628F719B100CDDE24 /* MiscServices.swift */,
 				9ED972C128F719B100CDDE24 /* ProgrammingServices.swift */,
-				FB2A948D28CA9B7800F64DF1 /* BarteringAppApp.swift */,
-				FB2A948F28CA9B7800F64DF1 /* ContentView.swift */,
 				FB2A949128CA9B7900F64DF1 /* Assets.xcassets */,
 				FB2A949328CA9B7900F64DF1 /* Preview Content */,
 				9AEACCB928D037FA00783F28 /* CompanyPage.swift */,
@@ -409,14 +403,12 @@
 				BF591C8E29185B74004FF9FC /* MessageView.swift in Sources */,
 				9AEACCBA28D037FA00783F28 /* CompanyPage.swift in Sources */,
 				BF591C8229148D1C004FF9FC /* Settings.swift in Sources */,
-				FB2A949028CA9B7800F64DF1 /* ContentView.swift in Sources */,
 				BF591C8C29185819004FF9FC /* MessageBubble.swift in Sources */,
 				36C5CCC5291DAACC0084AB4B /* Congratulations.swift in Sources */,
 				BF591C9B29196A06004FF9FC /* MessagesManager.swift in Sources */,
 				9A9C4B1228E527CC00C05EB5 /* CreateAccount.swift in Sources */,
 				9AE50E1C28F9E8D3004DF1EE /* ChatPage.swift in Sources */,
 				9ABD6F63290B301600332EFA /* ProfilePage.swift in Sources */,
-				FB2A948E28CA9B7800F64DF1 /* BarteringAppApp.swift in Sources */,
 				9ED972C928F719B100CDDE24 /* LaborServices.swift in Sources */,
 				9A88224D28DE683C00995674 /* LoginPage.swift in Sources */,
 				BF591C8A291857B8004FF9FC /* Message.swift in Sources */,
