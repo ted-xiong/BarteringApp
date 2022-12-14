@@ -32,7 +32,7 @@ struct TitleRow: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                NavigationLink(destination: BarterInitiated2()) {
+                NavigationLink(destination: InputOffer().navigationBarBackButtonHidden(true)) {
                     Image("InitiateBarter")
                         .resizable()
                         .frame(width: 60, height: 60)

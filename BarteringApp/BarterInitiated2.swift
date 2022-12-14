@@ -123,7 +123,7 @@ struct BarterInitiated2: View {
                     .background(Color(.systemRed))
                     .cornerRadius(20)
                     Spacer()
-                    NavigationLink(destination: NavigationBar().navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: HomePage().navigationBarBackButtonHidden(true)) {
                         Text("Accept")
                             .font(Font.custom("Nunito", size: 17))
                     }.frame(maxWidth: .infinity, minHeight: 25)

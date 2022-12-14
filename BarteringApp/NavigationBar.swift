@@ -8,22 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
-    /*private var tagSearch = [ tagData(name: "Windows"),
-                                 tagData(name: "Cleaning"),
-                                 tagData(name: "Build"),
-                                 tagData(name: "Design"),
-                                 tagData(name: "DayCare")
-                                   ]
-       @State private var searchText = ""*/
     var body: some View{
         NavigationView{
             ZStack{
                 Color.white
                 HomePage()
             }
-            }
+        }
     }
 }
+
 struct ExploreView: View {
     var body: some View{
         NavigationView{
@@ -42,9 +36,6 @@ struct ExploreView: View {
             })
             
             }
-        
-            
-        
         }
     }
 
@@ -62,17 +53,17 @@ struct InfoView: View {
     }
 }
 
-struct BarterView: View {
-    var body: some View{
-        NavigationView{
-                ZStack{
-                    Color.white
-                    //here
-                }
-                .navigationTitle("Barterers Near You")
-        }
-    }
-}
+//struct BarterView: View {
+//    var body: some View{
+//        NavigationView{
+//                ZStack{
+//                    Color.white
+//                    //here
+//                }
+//                .navigationTitle("Barterers Near You")
+//        }
+//    }
+//}
 struct ProfileView: View {
     var body: some View{
         NavigationView{
@@ -98,21 +89,21 @@ struct NavigationBar: View {
                 Image(systemName: "magnifyingglass.circle.fill")
                 Text("Search")
             }
-            BarterView().tabItem{
-                Image(systemName: "bubble.left.and.bubble.right.fill")
-                Text("Barter Board")
-            }
+//            BarterView().tabItem{
+//                Image(systemName: "bubble.left.and.bubble.right.fill")
+//                Text("Barter Board")
+//            }
             ProfileView().tabItem{
                 Image(systemName: "person.fill")
                 Text("Profile")
             }
             
             InfoView().tabItem{
-                NavigationView{
+                //NavigationView{
                         Image(systemName: "person.fill.questionmark")
                             .font(.largeTitle)
                         Text("Help")
-                }
+                //}
             }
         }
     }

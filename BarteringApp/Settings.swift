@@ -53,21 +53,28 @@ struct Settings: View {
                                  SettingRowView(title: "Support",
                                  systemImageName: "person.fill.questionmark")
                               })
-                    NavigationLink(destination: EmptyView(), label: {
+                    NavigationLink(destination: _fa(), label: {
                                  SettingRowView(title: "Two-Factor Authentication",
                                  systemImageName: "lock.circle")
                               })
                 }
 
 
-                Button(action:{print("Log out")}){
-                            SettingRowView(title: "Sign out", systemImageName: "rectangle.portrait.and.arrow.right")
-                                .foregroundColor(.black)
-                                .padding(10)
-                                .background(Color.red)
-                                .cornerRadius(10)
+//                Button(action:{print("Log out")}){
+//                            SettingRowView(title: "Sign out", systemImageName: "rectangle.portrait.and.arrow.right")
+//                                .foregroundColor(.black)
+//                                .padding(10)
+//                                .background(Color.red)
+//                                .cornerRadius(10)
+//                }
+//                .frame(maxWidth: .infinity)
+                NavigationLink(destination: LoginPage().navigationBarBackButtonHidden(true)) {
+                    SettingRowView(title: "Sign out", systemImageName: "rectangle.portrait.and.arrow.right")
+                                                    .foregroundColor(.black)
+                                                    .padding(10)
+                                                    .background(Color.red)
+                                                    .cornerRadius(10)
                 }
-                .frame(maxWidth: .infinity)
 
             }//.navigationTitle("Settings")
         }

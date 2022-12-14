@@ -51,7 +51,6 @@ struct LoginPage: View {
 
                 .foregroundColor(Color("turquoise")).font(.callout.bold())
                 NavigationLink(destination: NavigationBar().navigationBarBackButtonHidden(true)) {
-                    //COME BACK AND CHANGE THIS LATER!!!!
                 Text("Login")
                     .font(Font.custom("Nunito", size: 17))
             }

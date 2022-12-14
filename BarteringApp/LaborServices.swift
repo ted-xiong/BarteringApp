@@ -35,7 +35,7 @@ struct LaborServices: View {
                                 .fill(Color.clear)
                                 .frame(width: 370, height: 70)
                                 .overlay(Image(systemName: "star").position(x: 35, y: 35))
-                                .overlay(NavigationLink("\(data)", destination: CompanyPage().navigationBarBackButtonHidden(true)))
+                                .overlay(NavigationLink("\(data)", destination: CompanyPage().navigationBarBackButtonHidden(false)))
                                 .border(Color.gray, width: 0.25)
                         }
                     })
